@@ -1,0 +1,33 @@
+*
+* name of the queue and queue manager
+* to read messages from
+*
+qname=PDAST.SRC.X22.PTY_L_BOQ
+qmgr=MQBRKSIT4
+
+
+*qname=RM.WMB.WM.REQUEST.IN_L
+*qmgr=MQBRKPPR3
+*
+* total number of messages to be written
+* the program will stop after this number of
+* messages has been written
+*
+MsgCount=999999999
+*As per the SLA peak volumes are 64920 per hour
+*MsgCount=64920
+*MsgCount=108000
+* delimiter and delimiterx are used to
+* define the message seperator sequence.
+*
+*delimiter="#@%@#"
+* delimiter="#$%^&"
+* delimiterx="0D0A"
+*
+* striprfh parameter determines if RFH
+* headers are to be written to the
+* data file along with the message
+* data or removed from the message
+*
+*striprfh=n
+*outputFileName=C:\Apps\ih03\MQTIMES_v2.txt

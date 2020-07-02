@@ -1,0 +1,25 @@
+(C) Copyright IBM Corp, 2001 - 2014
+mqputsc.c V3.0 Client version (May 19 2014 14:31:41)
+
+1511 bytes read from data file C:\Workspace\Royal_Heartbeat\src\test\resources\Scripts\TC99_4_PDA-071C-JC092GB.xml
+Total files read 1
+Total messages found 1
+
+1 messages to be written to queue PDAST.BIG.PTYSCAN.IN.03 on queue manager MQSUPPORT.SVRCONN/TCP/10.106.85.21(1420)
+thinkTime = 1000 batchsize = 1
+connecting using TCP on channel MQSUPPORT.SVRCONN at 10.106.85.21(1420)
+Connected to MMBSVC01SI                                      
+opening queue PDAST.BIG.PTYSCAN.IN.03 for output
+First message written at Wed Feb 26 14:46:34 2020
+MQ Timestamp of first message written at 14:46:31
+Last message written at Wed Feb 26 14:46:35 2020
+MQ timestamp of last message written at 14:46:31
+
+Total messages written 1 out of 1
+Total elapsed time in seconds 1.036888
+Total bytes written   1511
+Total memory used 1896
+
+closing the queue
+disconnecting from the queue manager
+MQPUTS program ended

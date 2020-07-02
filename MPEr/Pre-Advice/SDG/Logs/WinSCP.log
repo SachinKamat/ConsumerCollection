@@ -1,0 +1,1866 @@
+. 2019-03-25 12:11:56.681 --------------------------------------------------------------------------
+. 2019-03-25 12:11:56.681 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-25 12:11:56.681 Configuration: nul
+. 2019-03-25 12:11:56.682 Log level: Normal
+. 2019-03-25 12:11:56.682 Local account: RMGP\ugbene.ositadinma
+. 2019-03-25 12:11:56.682 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-25 12:11:56.682 Process ID: 17288
+. 2019-03-25 12:11:56.682 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-25 12:11:56.682 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-25 12:11:56.682 Login time: 2019-03-25T12:11:56+00:00 12:11:56
+. 2019-03-25 12:11:56.682 --------------------------------------------------------------------------
+. 2019-03-25 12:11:56.682 Script: Retrospectively logging previous script records:
+> 2019-03-25 12:11:56.682 Script: option echo off 
+< 2019-03-25 12:11:56.682 Script: echo            off       
+> 2019-03-25 12:11:56.682 Script: option batch on 
+< 2019-03-25 12:11:56.683 Script: batch           on        
+< 2019-03-25 12:11:56.683 Script: reconnecttime   120       
+> 2019-03-25 12:11:56.683 Script: option confirm off 
+< 2019-03-25 12:11:56.683 Script: confirm         off       
+> 2019-03-25 12:11:56.683 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-25 12:11:56.683 --------------------------------------------------------------------------
+. 2019-03-25 12:11:56.683 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-25 12:11:56.683 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-25 12:11:56.683 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-25 12:11:56.683 Tunnel: No
+. 2019-03-25 12:11:56.683 Transfer Protocol: SFTP
+. 2019-03-25 12:11:56.683 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-25 12:11:56.683 Disable Nagle: No
+. 2019-03-25 12:11:56.683 Proxy: None
+. 2019-03-25 12:11:56.683 Send buffer: 262144
+. 2019-03-25 12:11:56.683 SSH protocol version: 2; Compression: No
+. 2019-03-25 12:11:56.683 Bypass authentication: No
+. 2019-03-25 12:11:56.683 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-25 12:11:56.683 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-25 12:11:56.683 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-25 12:11:56.683 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-25 12:11:56.683 Simple channel: Yes
+. 2019-03-25 12:11:56.683 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-25 12:11:56.683 Shell: default
+. 2019-03-25 12:11:56.683 EOL: LF, UTF: Auto
+. 2019-03-25 12:11:56.683 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-25 12:11:56.683 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-25 12:11:56.683 SFTP Bugs: Auto,Auto
+. 2019-03-25 12:11:56.683 SFTP Server: default
+. 2019-03-25 12:11:56.683 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-25 12:11:56.683 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-25 12:11:56.683 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-25 12:11:56.683 DST mode: Unix
+. 2019-03-25 12:11:56.683 --------------------------------------------------------------------------
+. 2019-03-25 12:11:56.684 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-25 12:11:56.684 Connecting to 10.106.87.5 port 22
+. 2019-03-25 12:11:56.686 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-25 12:11:56.706 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-25 12:11:56.706 We believe remote version has SSH-2 channel request bug
+. 2019-03-25 12:11:56.706 Using SSH protocol version 2
+. 2019-03-25 12:11:56.706 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-25 12:11:56.710 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-25 12:11:56.778 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-25 12:11:56.778 Host key fingerprint is:
+. 2019-03-25 12:11:56.778 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-25 12:11:56.778 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-25 12:11:56.778 Host key matches configured key
+. 2019-03-25 12:11:56.779 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-25 12:11:56.779 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-25 12:11:56.779 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-25 12:11:56.779 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-25 12:11:56.783 Using username "E000459".
+. 2019-03-25 12:11:56.804 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-25 12:11:56.804 Attempting keyboard-interactive authentication
+. 2019-03-25 12:11:56.805 Server refused keyboard-interactive authentication
+. 2019-03-25 12:11:56.805 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-25 12:11:56.805 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-25 12:11:56.805 Using stored password.
+. 2019-03-25 12:11:56.806 Sent password
+. 2019-03-25 12:11:56.815 Access granted
+. 2019-03-25 12:11:56.815 Opening session as main channel
+. 2019-03-25 12:11:56.840 Opened main channel
+. 2019-03-25 12:11:56.846 Started a shell/command
+. 2019-03-25 12:11:56.846 --------------------------------------------------------------------------
+. 2019-03-25 12:11:56.846 Using SFTP protocol.
+. 2019-03-25 12:11:56.846 Doing startup conversation with host.
+> 2019-03-25 12:11:56.847 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-25 12:11:56.848 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-25 12:11:56.848 SFTP version 3 negotiated.
+. 2019-03-25 12:11:56.848 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-25 12:11:56.848 Supports statvfs@openssh.com extension version "2"
+. 2019-03-25 12:11:56.848 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-25 12:11:56.848 Supports hardlink@openssh.com extension version "1"
+. 2019-03-25 12:11:56.848 We believe the server has signed timestamps bug
+. 2019-03-25 12:11:56.848 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-25 12:11:56.848 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-25 12:11:56.848 Getting current directory name.
+. 2019-03-25 12:11:56.848 Getting real path for '.'
+> 2019-03-25 12:11:56.848 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-25 12:11:56.851 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-25 12:11:56.851 Real path is '/'
+. 2019-03-25 12:11:56.851 Startup conversation with host finished.
+< 2019-03-25 12:11:56.851 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-25 12:11:56.851 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-25 12:11:56.853 Copying 1 files/directories to remote directory "/pub/693/in/"
+. 2019-03-25 12:11:56.853   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-25 12:11:56.853   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-25 12:11:56.853   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-25 12:11:56.855 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825891930.csv' [2019-03-25T12:10:10.180Z] [758]
+. 2019-03-25 12:11:56.855 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825891930.csv" to remote directory started.
+. 2019-03-25 12:11:56.855 Binary transfer mode selected.
+. 2019-03-25 12:11:56.855 Opening remote file.
+> 2019-03-25 12:11:56.855 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-25 12:11:56.858 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-25 12:11:56.858 Type: SSH_FXP_WRITE, Size: 783, Number: 774
+> 2019-03-25 12:11:56.858 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-25 12:11:56.860 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-25 12:11:56.860 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-25 12:11:56.860 Status code: 0
+. 2019-03-25 12:11:56.860 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825891930.csv' [758]
+> 2019-03-25 12:11:56.861 Script: exit
+. 2019-03-25 12:11:56.861 Script: Exit code: 0
+. 2019-03-25 12:11:56.861 Closing connection.
+. 2019-03-25 12:11:56.861 Sending special code: 12
+. 2019-03-25 12:11:56.861 Sent EOF message
+. 2019-03-25 13:01:30.413 --------------------------------------------------------------------------
+. 2019-03-25 13:01:30.413 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-25 13:01:30.413 Configuration: nul
+. 2019-03-25 13:01:30.414 Log level: Normal
+. 2019-03-25 13:01:30.414 Local account: RMGP\ugbene.ositadinma
+. 2019-03-25 13:01:30.414 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-25 13:01:30.414 Process ID: 16948
+. 2019-03-25 13:01:30.414 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-25 13:01:30.414 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-25 13:01:30.414 Login time: 2019-03-25T13:01:30+00:00 13:01:30
+. 2019-03-25 13:01:30.414 --------------------------------------------------------------------------
+. 2019-03-25 13:01:30.414 Script: Retrospectively logging previous script records:
+> 2019-03-25 13:01:30.414 Script: option echo off 
+< 2019-03-25 13:01:30.414 Script: echo            off       
+> 2019-03-25 13:01:30.414 Script: option batch on 
+< 2019-03-25 13:01:30.414 Script: batch           on        
+< 2019-03-25 13:01:30.414 Script: reconnecttime   120       
+> 2019-03-25 13:01:30.414 Script: option confirm off 
+< 2019-03-25 13:01:30.414 Script: confirm         off       
+> 2019-03-25 13:01:30.414 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-25 13:01:30.414 --------------------------------------------------------------------------
+. 2019-03-25 13:01:30.414 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-25 13:01:30.414 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-25 13:01:30.414 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-25 13:01:30.415 Tunnel: No
+. 2019-03-25 13:01:30.415 Transfer Protocol: SFTP
+. 2019-03-25 13:01:30.415 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-25 13:01:30.415 Disable Nagle: No
+. 2019-03-25 13:01:30.415 Proxy: None
+. 2019-03-25 13:01:30.415 Send buffer: 262144
+. 2019-03-25 13:01:30.415 SSH protocol version: 2; Compression: No
+. 2019-03-25 13:01:30.415 Bypass authentication: No
+. 2019-03-25 13:01:30.415 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-25 13:01:30.415 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-25 13:01:30.415 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-25 13:01:30.415 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-25 13:01:30.415 Simple channel: Yes
+. 2019-03-25 13:01:30.415 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-25 13:01:30.415 Shell: default
+. 2019-03-25 13:01:30.415 EOL: LF, UTF: Auto
+. 2019-03-25 13:01:30.415 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-25 13:01:30.415 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-25 13:01:30.415 SFTP Bugs: Auto,Auto
+. 2019-03-25 13:01:30.415 SFTP Server: default
+. 2019-03-25 13:01:30.415 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-25 13:01:30.415 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-25 13:01:30.415 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-25 13:01:30.415 DST mode: Unix
+. 2019-03-25 13:01:30.415 --------------------------------------------------------------------------
+. 2019-03-25 13:01:30.415 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-25 13:01:30.415 Connecting to 10.106.87.5 port 22
+. 2019-03-25 13:01:30.417 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-25 13:01:30.429 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-25 13:01:30.429 We believe remote version has SSH-2 channel request bug
+. 2019-03-25 13:01:30.429 Using SSH protocol version 2
+. 2019-03-25 13:01:30.429 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-25 13:01:30.432 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-25 13:01:30.497 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-25 13:01:30.498 Host key fingerprint is:
+. 2019-03-25 13:01:30.498 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-25 13:01:30.498 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-25 13:01:30.498 Host key matches configured key
+. 2019-03-25 13:01:30.498 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-25 13:01:30.498 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-25 13:01:30.498 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-25 13:01:30.498 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-25 13:01:30.500 Using username "E000459".
+. 2019-03-25 13:01:30.515 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-25 13:01:30.515 Attempting keyboard-interactive authentication
+. 2019-03-25 13:01:30.516 Server refused keyboard-interactive authentication
+. 2019-03-25 13:01:30.516 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-25 13:01:30.516 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-25 13:01:30.516 Using stored password.
+. 2019-03-25 13:01:30.516 Sent password
+. 2019-03-25 13:01:30.526 Access granted
+. 2019-03-25 13:01:30.526 Opening session as main channel
+. 2019-03-25 13:01:30.537 Opened main channel
+. 2019-03-25 13:01:30.541 Started a shell/command
+. 2019-03-25 13:01:30.541 --------------------------------------------------------------------------
+. 2019-03-25 13:01:30.541 Using SFTP protocol.
+. 2019-03-25 13:01:30.541 Doing startup conversation with host.
+> 2019-03-25 13:01:30.541 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-25 13:01:30.543 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-25 13:01:30.543 SFTP version 3 negotiated.
+. 2019-03-25 13:01:30.543 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-25 13:01:30.543 Supports statvfs@openssh.com extension version "2"
+. 2019-03-25 13:01:30.543 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-25 13:01:30.543 Supports hardlink@openssh.com extension version "1"
+. 2019-03-25 13:01:30.543 We believe the server has signed timestamps bug
+. 2019-03-25 13:01:30.543 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-25 13:01:30.543 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-25 13:01:30.543 Getting current directory name.
+. 2019-03-25 13:01:30.543 Getting real path for '.'
+> 2019-03-25 13:01:30.543 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-25 13:01:30.545 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-25 13:01:30.545 Real path is '/'
+. 2019-03-25 13:01:30.545 Startup conversation with host finished.
+< 2019-03-25 13:01:30.545 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-25 13:01:30.545 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-25 13:01:30.546 Copying 3 files/directories to remote directory "/pub/693/in/"
+. 2019-03-25 13:01:30.546   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-25 13:01:30.546   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-25 13:01:30.546   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-25 13:01:30.546 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_025891976.csv' [2019-03-25T12:56:00.585Z] [758]
+. 2019-03-25 13:01:30.546 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_025891976.csv" to remote directory started.
+. 2019-03-25 13:01:30.546 Binary transfer mode selected.
+. 2019-03-25 13:01:30.547 Opening remote file.
+> 2019-03-25 13:01:30.547 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-25 13:01:30.549 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-25 13:01:30.549 Type: SSH_FXP_WRITE, Size: 783, Number: 774
+> 2019-03-25 13:01:30.549 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-25 13:01:30.550 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-25 13:01:30.551 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-25 13:01:30.551 Status code: 0
+. 2019-03-25 13:01:30.551 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_025891976.csv' [758]
+. 2019-03-25 13:01:30.552 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891978.csv' [2019-03-25T12:58:25.092Z] [758]
+. 2019-03-25 13:01:30.552 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891978.csv" to remote directory started.
+. 2019-03-25 13:01:30.552 Binary transfer mode selected.
+. 2019-03-25 13:01:30.552 Opening remote file.
+> 2019-03-25 13:01:30.552 Type: SSH_FXP_OPEN, Size: 70, Number: 1283
+< 2019-03-25 13:01:30.554 Type: SSH_FXP_HANDLE, Size: 13, Number: 1283
+> 2019-03-25 13:01:30.554 Type: SSH_FXP_WRITE, Size: 783, Number: 1798
+> 2019-03-25 13:01:30.554 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+< 2019-03-25 13:01:30.555 Type: SSH_FXP_STATUS, Size: 24, Number: 1798
+< 2019-03-25 13:01:30.556 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+< 2019-03-25 13:01:30.556 Status code: 0
+. 2019-03-25 13:01:30.556 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891978.csv' [758]
+. 2019-03-25 13:01:30.557 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891980.csv' [2019-03-25T12:59:57.236Z] [758]
+. 2019-03-25 13:01:30.558 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891980.csv" to remote directory started.
+. 2019-03-25 13:01:30.558 Binary transfer mode selected.
+. 2019-03-25 13:01:30.558 Opening remote file.
+> 2019-03-25 13:01:30.558 Type: SSH_FXP_OPEN, Size: 70, Number: 2307
+< 2019-03-25 13:01:30.560 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2019-03-25 13:01:30.560 Type: SSH_FXP_WRITE, Size: 783, Number: 2822
+> 2019-03-25 13:01:30.560 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+< 2019-03-25 13:01:30.561 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2019-03-25 13:01:30.562 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2019-03-25 13:01:30.562 Status code: 0
+. 2019-03-25 13:01:30.562 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_225891980.csv' [758]
+> 2019-03-25 13:01:30.562 Script: exit
+. 2019-03-25 13:01:30.563 Script: Exit code: 0
+. 2019-03-25 13:01:30.563 Closing connection.
+. 2019-03-25 13:01:30.563 Sending special code: 12
+. 2019-03-25 13:01:30.563 Sent EOF message
+. 2019-03-26 06:36:22.027 --------------------------------------------------------------------------
+. 2019-03-26 06:36:22.028 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-26 06:36:22.028 Configuration: nul
+. 2019-03-26 06:36:22.028 Log level: Normal
+. 2019-03-26 06:36:22.028 Local account: RMGP\ugbene.ositadinma
+. 2019-03-26 06:36:22.028 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-26 06:36:22.028 Process ID: 12536
+. 2019-03-26 06:36:22.028 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-26 06:36:22.028 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-26 06:36:22.028 Login time: 2019-03-26T06:36:22+00:00 06:36:22
+. 2019-03-26 06:36:22.028 --------------------------------------------------------------------------
+. 2019-03-26 06:36:22.028 Script: Retrospectively logging previous script records:
+> 2019-03-26 06:36:22.029 Script: option echo off 
+< 2019-03-26 06:36:22.029 Script: echo            off       
+> 2019-03-26 06:36:22.029 Script: option batch on 
+< 2019-03-26 06:36:22.029 Script: batch           on        
+< 2019-03-26 06:36:22.029 Script: reconnecttime   120       
+> 2019-03-26 06:36:22.029 Script: option confirm off 
+< 2019-03-26 06:36:22.029 Script: confirm         off       
+> 2019-03-26 06:36:22.029 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-26 06:36:22.029 --------------------------------------------------------------------------
+. 2019-03-26 06:36:22.029 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-26 06:36:22.029 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-26 06:36:22.029 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-26 06:36:22.029 Tunnel: No
+. 2019-03-26 06:36:22.029 Transfer Protocol: SFTP
+. 2019-03-26 06:36:22.029 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-26 06:36:22.029 Disable Nagle: No
+. 2019-03-26 06:36:22.029 Proxy: None
+. 2019-03-26 06:36:22.029 Send buffer: 262144
+. 2019-03-26 06:36:22.029 SSH protocol version: 2; Compression: No
+. 2019-03-26 06:36:22.029 Bypass authentication: No
+. 2019-03-26 06:36:22.029 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-26 06:36:22.029 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-26 06:36:22.029 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-26 06:36:22.029 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-26 06:36:22.029 Simple channel: Yes
+. 2019-03-26 06:36:22.029 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-26 06:36:22.029 Shell: default
+. 2019-03-26 06:36:22.029 EOL: LF, UTF: Auto
+. 2019-03-26 06:36:22.029 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-26 06:36:22.029 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-26 06:36:22.029 SFTP Bugs: Auto,Auto
+. 2019-03-26 06:36:22.029 SFTP Server: default
+. 2019-03-26 06:36:22.029 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-26 06:36:22.029 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-26 06:36:22.029 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-26 06:36:22.029 DST mode: Unix
+. 2019-03-26 06:36:22.029 --------------------------------------------------------------------------
+. 2019-03-26 06:36:22.030 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-26 06:36:22.030 Connecting to 10.106.87.5 port 22
+. 2019-03-26 06:36:22.032 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-26 06:36:22.042 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-26 06:36:22.042 We believe remote version has SSH-2 channel request bug
+. 2019-03-26 06:36:22.042 Using SSH protocol version 2
+. 2019-03-26 06:36:22.043 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-26 06:36:22.045 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-26 06:36:22.108 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-26 06:36:22.108 Host key fingerprint is:
+. 2019-03-26 06:36:22.108 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-26 06:36:22.108 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-26 06:36:22.109 Host key matches configured key
+. 2019-03-26 06:36:22.109 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-26 06:36:22.109 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-26 06:36:22.109 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-26 06:36:22.109 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-26 06:36:22.111 Using username "E000459".
+. 2019-03-26 06:36:22.122 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-26 06:36:22.122 Attempting keyboard-interactive authentication
+. 2019-03-26 06:36:22.124 Server refused keyboard-interactive authentication
+. 2019-03-26 06:36:22.124 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-26 06:36:22.124 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-26 06:36:22.124 Using stored password.
+. 2019-03-26 06:36:22.124 Sent password
+. 2019-03-26 06:36:22.129 Access granted
+. 2019-03-26 06:36:22.130 Opening session as main channel
+. 2019-03-26 06:36:22.142 Opened main channel
+. 2019-03-26 06:36:22.145 Started a shell/command
+. 2019-03-26 06:36:22.145 --------------------------------------------------------------------------
+. 2019-03-26 06:36:22.146 Using SFTP protocol.
+. 2019-03-26 06:36:22.146 Doing startup conversation with host.
+> 2019-03-26 06:36:22.146 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-26 06:36:22.147 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-26 06:36:22.147 SFTP version 3 negotiated.
+. 2019-03-26 06:36:22.148 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-26 06:36:22.148 Supports statvfs@openssh.com extension version "2"
+. 2019-03-26 06:36:22.148 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-26 06:36:22.148 Supports hardlink@openssh.com extension version "1"
+. 2019-03-26 06:36:22.148 We believe the server has signed timestamps bug
+. 2019-03-26 06:36:22.148 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-26 06:36:22.148 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-26 06:36:22.148 Getting current directory name.
+. 2019-03-26 06:36:22.148 Getting real path for '.'
+> 2019-03-26 06:36:22.148 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-26 06:36:22.149 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-26 06:36:22.150 Real path is '/'
+. 2019-03-26 06:36:22.150 Startup conversation with host finished.
+< 2019-03-26 06:36:22.150 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-26 06:36:22.150 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-26 06:36:22.151 Copying 8 files/directories to remote directory "/pub/693/in/"
+. 2019-03-26 06:36:22.151   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-26 06:36:22.151   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-26 06:36:22.151   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-26 06:36:22.151 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893032.csv' [2019-03-26T06:32:17.601Z] [758]
+. 2019-03-26 06:36:22.153 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893032.csv" to remote directory started.
+. 2019-03-26 06:36:22.153 Binary transfer mode selected.
+. 2019-03-26 06:36:22.153 Opening remote file.
+> 2019-03-26 06:36:22.153 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-26 06:36:22.155 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-26 06:36:22.155 Type: SSH_FXP_WRITE, Size: 783, Number: 774
+> 2019-03-26 06:36:22.155 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-26 06:36:22.157 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-26 06:36:22.157 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-26 06:36:22.157 Status code: 0
+. 2019-03-26 06:36:22.157 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893032.csv' [758]
+. 2019-03-26 06:36:22.158 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893033.csv' [2019-03-26T06:33:18.828Z] [758]
+. 2019-03-26 06:36:22.159 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893033.csv" to remote directory started.
+. 2019-03-26 06:36:22.159 Binary transfer mode selected.
+. 2019-03-26 06:36:22.159 Opening remote file.
+> 2019-03-26 06:36:22.159 Type: SSH_FXP_OPEN, Size: 70, Number: 1283
+< 2019-03-26 06:36:22.161 Type: SSH_FXP_HANDLE, Size: 13, Number: 1283
+> 2019-03-26 06:36:22.161 Type: SSH_FXP_WRITE, Size: 783, Number: 1798
+> 2019-03-26 06:36:22.161 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+< 2019-03-26 06:36:22.163 Type: SSH_FXP_STATUS, Size: 24, Number: 1798
+< 2019-03-26 06:36:22.163 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+< 2019-03-26 06:36:22.163 Status code: 0
+. 2019-03-26 06:36:22.163 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125893033.csv' [758]
+. 2019-03-26 06:36:22.164 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325893034.csv' [2019-03-26T06:34:20.579Z] [758]
+. 2019-03-26 06:36:22.165 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325893034.csv" to remote directory started.
+. 2019-03-26 06:36:22.165 Binary transfer mode selected.
+. 2019-03-26 06:36:22.165 Opening remote file.
+> 2019-03-26 06:36:22.165 Type: SSH_FXP_OPEN, Size: 70, Number: 2307
+< 2019-03-26 06:36:22.167 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2019-03-26 06:36:22.167 Type: SSH_FXP_WRITE, Size: 783, Number: 2822
+> 2019-03-26 06:36:22.167 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+< 2019-03-26 06:36:22.169 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2019-03-26 06:36:22.169 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2019-03-26 06:36:22.170 Status code: 0
+. 2019-03-26 06:36:22.170 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325893034.csv' [758]
+. 2019-03-26 06:36:22.170 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893029.csv' [2019-03-26T06:29:14.202Z] [758]
+. 2019-03-26 06:36:22.171 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893029.csv" to remote directory started.
+. 2019-03-26 06:36:22.171 Binary transfer mode selected.
+. 2019-03-26 06:36:22.171 Opening remote file.
+> 2019-03-26 06:36:22.171 Type: SSH_FXP_OPEN, Size: 70, Number: 3331
+< 2019-03-26 06:36:22.190 Type: SSH_FXP_HANDLE, Size: 13, Number: 3331
+> 2019-03-26 06:36:22.190 Type: SSH_FXP_WRITE, Size: 783, Number: 3846
+> 2019-03-26 06:36:22.191 Type: SSH_FXP_CLOSE, Size: 13, Number: 4100
+< 2019-03-26 06:36:22.192 Type: SSH_FXP_STATUS, Size: 24, Number: 3846
+< 2019-03-26 06:36:22.192 Type: SSH_FXP_STATUS, Size: 24, Number: 4100
+< 2019-03-26 06:36:22.193 Status code: 0
+. 2019-03-26 06:36:22.193 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893029.csv' [758]
+. 2019-03-26 06:36:22.194 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893035.csv' [2019-03-26T06:35:21.755Z] [758]
+. 2019-03-26 06:36:22.195 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893035.csv" to remote directory started.
+. 2019-03-26 06:36:22.195 Binary transfer mode selected.
+. 2019-03-26 06:36:22.195 Opening remote file.
+> 2019-03-26 06:36:22.196 Type: SSH_FXP_OPEN, Size: 70, Number: 4355
+< 2019-03-26 06:36:22.198 Type: SSH_FXP_HANDLE, Size: 13, Number: 4355
+> 2019-03-26 06:36:22.198 Type: SSH_FXP_WRITE, Size: 783, Number: 4870
+> 2019-03-26 06:36:22.198 Type: SSH_FXP_CLOSE, Size: 13, Number: 5124
+< 2019-03-26 06:36:22.200 Type: SSH_FXP_STATUS, Size: 24, Number: 4870
+< 2019-03-26 06:36:22.200 Type: SSH_FXP_STATUS, Size: 24, Number: 5124
+< 2019-03-26 06:36:22.200 Status code: 0
+. 2019-03-26 06:36:22.200 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525893035.csv' [758]
+. 2019-03-26 06:36:22.201 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_725893031.csv' [2019-03-26T06:31:16.475Z] [758]
+. 2019-03-26 06:36:22.202 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_725893031.csv" to remote directory started.
+. 2019-03-26 06:36:22.202 Binary transfer mode selected.
+. 2019-03-26 06:36:22.202 Opening remote file.
+> 2019-03-26 06:36:22.202 Type: SSH_FXP_OPEN, Size: 70, Number: 5379
+< 2019-03-26 06:36:22.204 Type: SSH_FXP_HANDLE, Size: 13, Number: 5379
+> 2019-03-26 06:36:22.204 Type: SSH_FXP_WRITE, Size: 783, Number: 5894
+> 2019-03-26 06:36:22.204 Type: SSH_FXP_CLOSE, Size: 13, Number: 6148
+< 2019-03-26 06:36:22.205 Type: SSH_FXP_STATUS, Size: 24, Number: 5894
+< 2019-03-26 06:36:22.206 Type: SSH_FXP_STATUS, Size: 24, Number: 6148
+< 2019-03-26 06:36:22.206 Status code: 0
+. 2019-03-26 06:36:22.206 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_725893031.csv' [758]
+. 2019-03-26 06:36:22.207 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893028.csv' [2019-03-26T06:28:13.065Z] [758]
+. 2019-03-26 06:36:22.208 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893028.csv" to remote directory started.
+. 2019-03-26 06:36:22.208 Binary transfer mode selected.
+. 2019-03-26 06:36:22.209 Opening remote file.
+> 2019-03-26 06:36:22.209 Type: SSH_FXP_OPEN, Size: 70, Number: 6403
+< 2019-03-26 06:36:22.212 Type: SSH_FXP_HANDLE, Size: 13, Number: 6403
+> 2019-03-26 06:36:22.212 Type: SSH_FXP_WRITE, Size: 783, Number: 6918
+> 2019-03-26 06:36:22.212 Type: SSH_FXP_CLOSE, Size: 13, Number: 7172
+< 2019-03-26 06:36:22.214 Type: SSH_FXP_STATUS, Size: 24, Number: 6918
+< 2019-03-26 06:36:22.214 Type: SSH_FXP_STATUS, Size: 24, Number: 7172
+< 2019-03-26 06:36:22.214 Status code: 0
+. 2019-03-26 06:36:22.215 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893028.csv' [758]
+. 2019-03-26 06:36:22.216 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893030.csv' [2019-03-26T06:30:15.363Z] [758]
+. 2019-03-26 06:36:22.218 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893030.csv" to remote directory started.
+. 2019-03-26 06:36:22.218 Binary transfer mode selected.
+. 2019-03-26 06:36:22.218 Opening remote file.
+> 2019-03-26 06:36:22.218 Type: SSH_FXP_OPEN, Size: 70, Number: 7427
+< 2019-03-26 06:36:22.223 Type: SSH_FXP_HANDLE, Size: 13, Number: 7427
+> 2019-03-26 06:36:22.223 Type: SSH_FXP_WRITE, Size: 783, Number: 7942
+> 2019-03-26 06:36:22.223 Type: SSH_FXP_CLOSE, Size: 13, Number: 8196
+< 2019-03-26 06:36:22.225 Type: SSH_FXP_STATUS, Size: 24, Number: 7942
+< 2019-03-26 06:36:22.225 Type: SSH_FXP_STATUS, Size: 24, Number: 8196
+< 2019-03-26 06:36:22.225 Status code: 0
+. 2019-03-26 06:36:22.225 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825893030.csv' [758]
+> 2019-03-26 06:36:22.226 Script: exit
+. 2019-03-26 06:36:22.226 Script: Exit code: 0
+. 2019-03-26 06:36:22.226 Closing connection.
+. 2019-03-26 06:36:22.226 Sending special code: 12
+. 2019-03-26 06:36:22.226 Sent EOF message
+. 2019-03-27 06:36:27.664 --------------------------------------------------------------------------
+. 2019-03-27 06:36:27.665 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-27 06:36:27.665 Configuration: nul
+. 2019-03-27 06:36:27.665 Log level: Normal
+. 2019-03-27 06:36:27.665 Local account: RMGP\ugbene.ositadinma
+. 2019-03-27 06:36:27.665 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-27 06:36:27.665 Process ID: 8208
+. 2019-03-27 06:36:27.666 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-27 06:36:27.666 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-27 06:36:27.666 Login time: 2019-03-27T06:36:27+00:00 06:36:27
+. 2019-03-27 06:36:27.666 --------------------------------------------------------------------------
+. 2019-03-27 06:36:27.666 Script: Retrospectively logging previous script records:
+> 2019-03-27 06:36:27.666 Script: option echo off 
+< 2019-03-27 06:36:27.666 Script: echo            off       
+> 2019-03-27 06:36:27.666 Script: option batch on 
+< 2019-03-27 06:36:27.666 Script: batch           on        
+< 2019-03-27 06:36:27.666 Script: reconnecttime   120       
+> 2019-03-27 06:36:27.666 Script: option confirm off 
+< 2019-03-27 06:36:27.666 Script: confirm         off       
+> 2019-03-27 06:36:27.666 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-27 06:36:27.666 --------------------------------------------------------------------------
+. 2019-03-27 06:36:27.666 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-27 06:36:27.666 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-27 06:36:27.666 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-27 06:36:27.666 Tunnel: No
+. 2019-03-27 06:36:27.666 Transfer Protocol: SFTP
+. 2019-03-27 06:36:27.666 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-27 06:36:27.666 Disable Nagle: No
+. 2019-03-27 06:36:27.666 Proxy: None
+. 2019-03-27 06:36:27.666 Send buffer: 262144
+. 2019-03-27 06:36:27.666 SSH protocol version: 2; Compression: No
+. 2019-03-27 06:36:27.666 Bypass authentication: No
+. 2019-03-27 06:36:27.666 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-27 06:36:27.666 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-27 06:36:27.666 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-27 06:36:27.666 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-27 06:36:27.666 Simple channel: Yes
+. 2019-03-27 06:36:27.666 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-27 06:36:27.666 Shell: default
+. 2019-03-27 06:36:27.666 EOL: LF, UTF: Auto
+. 2019-03-27 06:36:27.667 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-27 06:36:27.667 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-27 06:36:27.667 SFTP Bugs: Auto,Auto
+. 2019-03-27 06:36:27.667 SFTP Server: default
+. 2019-03-27 06:36:27.667 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-27 06:36:27.667 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-27 06:36:27.667 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-27 06:36:27.667 DST mode: Unix
+. 2019-03-27 06:36:27.667 --------------------------------------------------------------------------
+. 2019-03-27 06:36:27.667 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-27 06:36:27.667 Connecting to 10.106.87.5 port 22
+. 2019-03-27 06:36:27.669 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-27 06:36:27.680 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-27 06:36:27.680 We believe remote version has SSH-2 channel request bug
+. 2019-03-27 06:36:27.680 Using SSH protocol version 2
+. 2019-03-27 06:36:27.680 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-27 06:36:27.682 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-27 06:36:27.746 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-27 06:36:27.746 Host key fingerprint is:
+. 2019-03-27 06:36:27.746 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 06:36:27.746 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 06:36:27.746 Host key matches configured key
+. 2019-03-27 06:36:27.747 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-27 06:36:27.747 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-27 06:36:27.747 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-27 06:36:27.747 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-27 06:36:27.749 Using username "E000459".
+. 2019-03-27 06:36:27.760 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 06:36:27.760 Attempting keyboard-interactive authentication
+. 2019-03-27 06:36:27.761 Server refused keyboard-interactive authentication
+. 2019-03-27 06:36:27.762 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 06:36:27.762 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-27 06:36:27.762 Using stored password.
+. 2019-03-27 06:36:27.762 Sent password
+. 2019-03-27 06:36:27.770 Access granted
+. 2019-03-27 06:36:27.770 Opening session as main channel
+. 2019-03-27 06:36:27.780 Opened main channel
+. 2019-03-27 06:36:27.782 Started a shell/command
+. 2019-03-27 06:36:27.782 --------------------------------------------------------------------------
+. 2019-03-27 06:36:27.783 Using SFTP protocol.
+. 2019-03-27 06:36:27.783 Doing startup conversation with host.
+> 2019-03-27 06:36:27.783 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-27 06:36:27.784 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-27 06:36:27.785 SFTP version 3 negotiated.
+. 2019-03-27 06:36:27.785 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-27 06:36:27.785 Supports statvfs@openssh.com extension version "2"
+. 2019-03-27 06:36:27.785 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-27 06:36:27.785 Supports hardlink@openssh.com extension version "1"
+. 2019-03-27 06:36:27.785 We believe the server has signed timestamps bug
+. 2019-03-27 06:36:27.785 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-27 06:36:27.785 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-27 06:36:27.785 Getting current directory name.
+. 2019-03-27 06:36:27.785 Getting real path for '.'
+> 2019-03-27 06:36:27.785 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-27 06:36:27.787 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-27 06:36:27.787 Real path is '/'
+. 2019-03-27 06:36:27.787 Startup conversation with host finished.
+< 2019-03-27 06:36:27.787 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-27 06:36:27.787 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-27 06:36:27.788 Copying 8 files/directories to remote directory "/pub/693/in/"
+. 2019-03-27 06:36:27.788   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-27 06:36:27.788   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-27 06:36:27.788   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-27 06:36:27.789 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894469.csv' [2019-03-27T06:29:20.149Z] [732]
+. 2019-03-27 06:36:27.790 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894469.csv" to remote directory started.
+. 2019-03-27 06:36:27.790 Binary transfer mode selected.
+. 2019-03-27 06:36:27.790 Opening remote file.
+> 2019-03-27 06:36:27.790 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-27 06:36:27.792 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-27 06:36:27.792 Type: SSH_FXP_WRITE, Size: 757, Number: 774
+> 2019-03-27 06:36:27.793 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-27 06:36:27.794 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-27 06:36:27.795 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-27 06:36:27.795 Status code: 0
+. 2019-03-27 06:36:27.795 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894469.csv' [732]
+. 2019-03-27 06:36:27.795 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894470.csv' [2019-03-27T06:30:21.249Z] [732]
+. 2019-03-27 06:36:27.796 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894470.csv" to remote directory started.
+. 2019-03-27 06:36:27.796 Binary transfer mode selected.
+. 2019-03-27 06:36:27.796 Opening remote file.
+> 2019-03-27 06:36:27.796 Type: SSH_FXP_OPEN, Size: 70, Number: 1283
+< 2019-03-27 06:36:27.821 Type: SSH_FXP_HANDLE, Size: 13, Number: 1283
+> 2019-03-27 06:36:27.821 Type: SSH_FXP_WRITE, Size: 757, Number: 1798
+> 2019-03-27 06:36:27.821 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+< 2019-03-27 06:36:27.823 Type: SSH_FXP_STATUS, Size: 24, Number: 1798
+< 2019-03-27 06:36:27.823 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+< 2019-03-27 06:36:27.823 Status code: 0
+. 2019-03-27 06:36:27.823 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894470.csv' [732]
+. 2019-03-27 06:36:27.824 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894472.csv' [2019-03-27T06:32:23.726Z] [732]
+. 2019-03-27 06:36:27.825 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894472.csv" to remote directory started.
+. 2019-03-27 06:36:27.825 Binary transfer mode selected.
+. 2019-03-27 06:36:27.825 Opening remote file.
+> 2019-03-27 06:36:27.825 Type: SSH_FXP_OPEN, Size: 70, Number: 2307
+< 2019-03-27 06:36:27.829 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2019-03-27 06:36:27.829 Type: SSH_FXP_WRITE, Size: 757, Number: 2822
+> 2019-03-27 06:36:27.829 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+< 2019-03-27 06:36:27.831 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2019-03-27 06:36:27.831 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2019-03-27 06:36:27.831 Status code: 0
+. 2019-03-27 06:36:27.831 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894472.csv' [732]
+. 2019-03-27 06:36:27.832 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894473.csv' [2019-03-27T06:33:24.825Z] [732]
+. 2019-03-27 06:36:27.833 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894473.csv" to remote directory started.
+. 2019-03-27 06:36:27.833 Binary transfer mode selected.
+. 2019-03-27 06:36:27.833 Opening remote file.
+> 2019-03-27 06:36:27.833 Type: SSH_FXP_OPEN, Size: 70, Number: 3331
+< 2019-03-27 06:36:27.835 Type: SSH_FXP_HANDLE, Size: 13, Number: 3331
+> 2019-03-27 06:36:27.835 Type: SSH_FXP_WRITE, Size: 757, Number: 3846
+> 2019-03-27 06:36:27.835 Type: SSH_FXP_CLOSE, Size: 13, Number: 4100
+< 2019-03-27 06:36:27.836 Type: SSH_FXP_STATUS, Size: 24, Number: 3846
+< 2019-03-27 06:36:27.837 Type: SSH_FXP_STATUS, Size: 24, Number: 4100
+< 2019-03-27 06:36:27.837 Status code: 0
+. 2019-03-27 06:36:27.837 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_325894473.csv' [732]
+. 2019-03-27 06:36:27.838 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894468.csv' [2019-03-27T06:28:19.047Z] [732]
+. 2019-03-27 06:36:27.839 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894468.csv" to remote directory started.
+. 2019-03-27 06:36:27.839 Binary transfer mode selected.
+. 2019-03-27 06:36:27.839 Opening remote file.
+> 2019-03-27 06:36:27.839 Type: SSH_FXP_OPEN, Size: 70, Number: 4355
+< 2019-03-27 06:36:27.841 Type: SSH_FXP_HANDLE, Size: 13, Number: 4355
+> 2019-03-27 06:36:27.841 Type: SSH_FXP_WRITE, Size: 757, Number: 4870
+> 2019-03-27 06:36:27.841 Type: SSH_FXP_CLOSE, Size: 13, Number: 5124
+< 2019-03-27 06:36:27.842 Type: SSH_FXP_STATUS, Size: 24, Number: 4870
+< 2019-03-27 06:36:27.843 Type: SSH_FXP_STATUS, Size: 24, Number: 5124
+< 2019-03-27 06:36:27.843 Status code: 0
+. 2019-03-27 06:36:27.843 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894468.csv' [732]
+. 2019-03-27 06:36:27.843 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894474.csv' [2019-03-27T06:34:26.155Z] [732]
+. 2019-03-27 06:36:27.844 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894474.csv" to remote directory started.
+. 2019-03-27 06:36:27.844 Binary transfer mode selected.
+. 2019-03-27 06:36:27.844 Opening remote file.
+> 2019-03-27 06:36:27.844 Type: SSH_FXP_OPEN, Size: 70, Number: 5379
+< 2019-03-27 06:36:27.846 Type: SSH_FXP_HANDLE, Size: 13, Number: 5379
+> 2019-03-27 06:36:27.846 Type: SSH_FXP_WRITE, Size: 757, Number: 5894
+> 2019-03-27 06:36:27.846 Type: SSH_FXP_CLOSE, Size: 13, Number: 6148
+< 2019-03-27 06:36:27.848 Type: SSH_FXP_STATUS, Size: 24, Number: 5894
+< 2019-03-27 06:36:27.848 Type: SSH_FXP_STATUS, Size: 24, Number: 6148
+< 2019-03-27 06:36:27.848 Status code: 0
+. 2019-03-27 06:36:27.848 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894474.csv' [732]
+. 2019-03-27 06:36:27.849 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894475.csv' [2019-03-27T06:35:27.369Z] [732]
+. 2019-03-27 06:36:27.850 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894475.csv" to remote directory started.
+. 2019-03-27 06:36:27.850 Binary transfer mode selected.
+. 2019-03-27 06:36:27.850 Opening remote file.
+> 2019-03-27 06:36:27.850 Type: SSH_FXP_OPEN, Size: 70, Number: 6403
+< 2019-03-27 06:36:27.852 Type: SSH_FXP_HANDLE, Size: 13, Number: 6403
+> 2019-03-27 06:36:27.852 Type: SSH_FXP_WRITE, Size: 757, Number: 6918
+> 2019-03-27 06:36:27.852 Type: SSH_FXP_CLOSE, Size: 13, Number: 7172
+< 2019-03-27 06:36:27.854 Type: SSH_FXP_STATUS, Size: 24, Number: 6918
+< 2019-03-27 06:36:27.854 Type: SSH_FXP_STATUS, Size: 24, Number: 7172
+< 2019-03-27 06:36:27.854 Status code: 0
+. 2019-03-27 06:36:27.854 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894475.csv' [732]
+. 2019-03-27 06:36:27.855 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825894471.csv' [2019-03-27T06:31:22.564Z] [732]
+. 2019-03-27 06:36:27.856 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825894471.csv" to remote directory started.
+. 2019-03-27 06:36:27.856 Binary transfer mode selected.
+. 2019-03-27 06:36:27.856 Opening remote file.
+> 2019-03-27 06:36:27.856 Type: SSH_FXP_OPEN, Size: 70, Number: 7427
+< 2019-03-27 06:36:27.858 Type: SSH_FXP_HANDLE, Size: 13, Number: 7427
+> 2019-03-27 06:36:27.858 Type: SSH_FXP_WRITE, Size: 757, Number: 7942
+> 2019-03-27 06:36:27.858 Type: SSH_FXP_CLOSE, Size: 13, Number: 8196
+< 2019-03-27 06:36:27.859 Type: SSH_FXP_STATUS, Size: 24, Number: 7942
+< 2019-03-27 06:36:27.860 Type: SSH_FXP_STATUS, Size: 24, Number: 8196
+< 2019-03-27 06:36:27.860 Status code: 0
+. 2019-03-27 06:36:27.860 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_825894471.csv' [732]
+> 2019-03-27 06:36:27.861 Script: exit
+. 2019-03-27 06:36:27.861 Script: Exit code: 0
+. 2019-03-27 06:36:27.861 Closing connection.
+. 2019-03-27 06:36:27.861 Sending special code: 12
+. 2019-03-27 06:36:27.861 Sent EOF message
+. 2019-03-27 13:18:13.468 --------------------------------------------------------------------------
+. 2019-03-27 13:18:13.468 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-27 13:18:13.468 Configuration: nul
+. 2019-03-27 13:18:13.468 Log level: Normal
+. 2019-03-27 13:18:13.468 Local account: RMGP\ugbene.ositadinma
+. 2019-03-27 13:18:13.468 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-27 13:18:13.468 Process ID: 9632
+. 2019-03-27 13:18:13.469 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-27 13:18:13.469 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-27 13:18:13.469 Login time: 2019-03-27T13:18:13+00:00 13:18:13
+. 2019-03-27 13:18:13.469 --------------------------------------------------------------------------
+. 2019-03-27 13:18:13.469 Script: Retrospectively logging previous script records:
+> 2019-03-27 13:18:13.469 Script: option echo off 
+< 2019-03-27 13:18:13.469 Script: echo            off       
+> 2019-03-27 13:18:13.469 Script: option batch on 
+< 2019-03-27 13:18:13.469 Script: batch           on        
+< 2019-03-27 13:18:13.469 Script: reconnecttime   120       
+> 2019-03-27 13:18:13.469 Script: option confirm off 
+< 2019-03-27 13:18:13.469 Script: confirm         off       
+> 2019-03-27 13:18:13.469 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-27 13:18:13.469 --------------------------------------------------------------------------
+. 2019-03-27 13:18:13.469 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-27 13:18:13.469 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-27 13:18:13.469 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-27 13:18:13.469 Tunnel: No
+. 2019-03-27 13:18:13.469 Transfer Protocol: SFTP
+. 2019-03-27 13:18:13.469 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-27 13:18:13.469 Disable Nagle: No
+. 2019-03-27 13:18:13.469 Proxy: None
+. 2019-03-27 13:18:13.469 Send buffer: 262144
+. 2019-03-27 13:18:13.469 SSH protocol version: 2; Compression: No
+. 2019-03-27 13:18:13.469 Bypass authentication: No
+. 2019-03-27 13:18:13.469 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-27 13:18:13.469 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-27 13:18:13.469 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-27 13:18:13.469 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-27 13:18:13.469 Simple channel: Yes
+. 2019-03-27 13:18:13.470 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-27 13:18:13.470 Shell: default
+. 2019-03-27 13:18:13.470 EOL: LF, UTF: Auto
+. 2019-03-27 13:18:13.470 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-27 13:18:13.470 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-27 13:18:13.470 SFTP Bugs: Auto,Auto
+. 2019-03-27 13:18:13.470 SFTP Server: default
+. 2019-03-27 13:18:13.470 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-27 13:18:13.470 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-27 13:18:13.470 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-27 13:18:13.470 DST mode: Unix
+. 2019-03-27 13:18:13.470 --------------------------------------------------------------------------
+. 2019-03-27 13:18:13.470 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-27 13:18:13.470 Connecting to 10.106.87.5 port 22
+. 2019-03-27 13:18:13.472 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-27 13:18:13.484 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-27 13:18:13.484 We believe remote version has SSH-2 channel request bug
+. 2019-03-27 13:18:13.484 Using SSH protocol version 2
+. 2019-03-27 13:18:13.485 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-27 13:18:13.487 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-27 13:18:13.552 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-27 13:18:13.553 Host key fingerprint is:
+. 2019-03-27 13:18:13.553 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 13:18:13.553 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 13:18:13.553 Host key matches configured key
+. 2019-03-27 13:18:13.553 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-27 13:18:13.553 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-27 13:18:13.554 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-27 13:18:13.554 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-27 13:18:13.556 Using username "E000459".
+. 2019-03-27 13:18:13.570 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 13:18:13.570 Attempting keyboard-interactive authentication
+. 2019-03-27 13:18:13.572 Server refused keyboard-interactive authentication
+. 2019-03-27 13:18:13.572 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 13:18:13.572 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-27 13:18:13.572 Using stored password.
+. 2019-03-27 13:18:13.572 Sent password
+. 2019-03-27 13:18:13.579 Access granted
+. 2019-03-27 13:18:13.579 Opening session as main channel
+. 2019-03-27 13:18:13.594 Opened main channel
+. 2019-03-27 13:18:13.597 Started a shell/command
+. 2019-03-27 13:18:13.597 --------------------------------------------------------------------------
+. 2019-03-27 13:18:13.597 Using SFTP protocol.
+. 2019-03-27 13:18:13.597 Doing startup conversation with host.
+> 2019-03-27 13:18:13.597 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-27 13:18:13.599 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-27 13:18:13.599 SFTP version 3 negotiated.
+. 2019-03-27 13:18:13.599 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-27 13:18:13.599 Supports statvfs@openssh.com extension version "2"
+. 2019-03-27 13:18:13.599 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-27 13:18:13.599 Supports hardlink@openssh.com extension version "1"
+. 2019-03-27 13:18:13.599 We believe the server has signed timestamps bug
+. 2019-03-27 13:18:13.599 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-27 13:18:13.599 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-27 13:18:13.599 Getting current directory name.
+. 2019-03-27 13:18:13.599 Getting real path for '.'
+> 2019-03-27 13:18:13.599 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-27 13:18:13.601 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-27 13:18:13.601 Real path is '/'
+. 2019-03-27 13:18:13.601 Startup conversation with host finished.
+< 2019-03-27 13:18:13.601 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-27 13:18:13.601 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-27 13:18:13.602 Copying 1 files/directories to remote directory "/pub/693/in/"
+. 2019-03-27 13:18:13.602   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-27 13:18:13.602   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-27 13:18:13.602   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-27 13:18:13.602 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894876.csv' [2019-03-27T13:16:11.908Z] [732]
+. 2019-03-27 13:18:13.602 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894876.csv" to remote directory started.
+. 2019-03-27 13:18:13.603 Binary transfer mode selected.
+. 2019-03-27 13:18:13.603 Opening remote file.
+> 2019-03-27 13:18:13.603 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-27 13:18:13.605 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-27 13:18:13.605 Type: SSH_FXP_WRITE, Size: 757, Number: 774
+> 2019-03-27 13:18:13.605 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-27 13:18:13.607 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-27 13:18:13.607 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-27 13:18:13.607 Status code: 0
+. 2019-03-27 13:18:13.607 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425894876.csv' [732]
+> 2019-03-27 13:18:13.608 Script: exit
+. 2019-03-27 13:18:13.608 Script: Exit code: 0
+. 2019-03-27 13:18:13.608 Closing connection.
+. 2019-03-27 13:18:13.608 Sending special code: 12
+. 2019-03-27 13:18:13.608 Sent EOF message
+. 2019-03-27 13:35:03.629 --------------------------------------------------------------------------
+. 2019-03-27 13:35:03.629 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-27 13:35:03.629 Configuration: nul
+. 2019-03-27 13:35:03.629 Log level: Normal
+. 2019-03-27 13:35:03.630 Local account: RMGP\ugbene.ositadinma
+. 2019-03-27 13:35:03.630 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-27 13:35:03.630 Process ID: 8604
+. 2019-03-27 13:35:03.630 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-27 13:35:03.630 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-27 13:35:03.630 Login time: 2019-03-27T13:35:03+00:00 13:35:03
+. 2019-03-27 13:35:03.630 --------------------------------------------------------------------------
+. 2019-03-27 13:35:03.630 Script: Retrospectively logging previous script records:
+> 2019-03-27 13:35:03.630 Script: option echo off 
+< 2019-03-27 13:35:03.630 Script: echo            off       
+> 2019-03-27 13:35:03.630 Script: option batch on 
+< 2019-03-27 13:35:03.630 Script: batch           on        
+< 2019-03-27 13:35:03.630 Script: reconnecttime   120       
+> 2019-03-27 13:35:03.630 Script: option confirm off 
+< 2019-03-27 13:35:03.630 Script: confirm         off       
+> 2019-03-27 13:35:03.630 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-27 13:35:03.630 --------------------------------------------------------------------------
+. 2019-03-27 13:35:03.630 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-27 13:35:03.630 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-27 13:35:03.630 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-27 13:35:03.630 Tunnel: No
+. 2019-03-27 13:35:03.630 Transfer Protocol: SFTP
+. 2019-03-27 13:35:03.631 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-27 13:35:03.631 Disable Nagle: No
+. 2019-03-27 13:35:03.631 Proxy: None
+. 2019-03-27 13:35:03.631 Send buffer: 262144
+. 2019-03-27 13:35:03.631 SSH protocol version: 2; Compression: No
+. 2019-03-27 13:35:03.631 Bypass authentication: No
+. 2019-03-27 13:35:03.631 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-27 13:35:03.631 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-27 13:35:03.631 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-27 13:35:03.631 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-27 13:35:03.631 Simple channel: Yes
+. 2019-03-27 13:35:03.631 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-27 13:35:03.631 Shell: default
+. 2019-03-27 13:35:03.631 EOL: LF, UTF: Auto
+. 2019-03-27 13:35:03.631 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-27 13:35:03.631 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-27 13:35:03.631 SFTP Bugs: Auto,Auto
+. 2019-03-27 13:35:03.631 SFTP Server: default
+. 2019-03-27 13:35:03.631 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-27 13:35:03.631 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-27 13:35:03.631 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-27 13:35:03.631 DST mode: Unix
+. 2019-03-27 13:35:03.631 --------------------------------------------------------------------------
+. 2019-03-27 13:35:03.631 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-27 13:35:03.631 Connecting to 10.106.87.5 port 22
+. 2019-03-27 13:35:03.635 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-27 13:35:03.653 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-27 13:35:03.653 We believe remote version has SSH-2 channel request bug
+. 2019-03-27 13:35:03.653 Using SSH protocol version 2
+. 2019-03-27 13:35:03.653 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-27 13:35:03.657 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-27 13:35:03.729 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-27 13:35:03.729 Host key fingerprint is:
+. 2019-03-27 13:35:03.729 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 13:35:03.738 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-27 13:35:03.738 Host key matches configured key
+. 2019-03-27 13:35:03.739 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-27 13:35:03.739 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-27 13:35:03.739 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-27 13:35:03.739 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-27 13:35:03.741 Using username "E000459".
+. 2019-03-27 13:35:03.762 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 13:35:03.762 Attempting keyboard-interactive authentication
+. 2019-03-27 13:35:03.763 Server refused keyboard-interactive authentication
+. 2019-03-27 13:35:03.763 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-27 13:35:03.763 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-27 13:35:03.763 Using stored password.
+. 2019-03-27 13:35:03.763 Sent password
+. 2019-03-27 13:35:03.772 Access granted
+. 2019-03-27 13:35:03.772 Opening session as main channel
+. 2019-03-27 13:35:03.798 Opened main channel
+. 2019-03-27 13:35:03.802 Started a shell/command
+. 2019-03-27 13:35:03.802 --------------------------------------------------------------------------
+. 2019-03-27 13:35:03.802 Using SFTP protocol.
+. 2019-03-27 13:35:03.802 Doing startup conversation with host.
+> 2019-03-27 13:35:03.802 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-27 13:35:03.804 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-27 13:35:03.804 SFTP version 3 negotiated.
+. 2019-03-27 13:35:03.804 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-27 13:35:03.804 Supports statvfs@openssh.com extension version "2"
+. 2019-03-27 13:35:03.804 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-27 13:35:03.804 Supports hardlink@openssh.com extension version "1"
+. 2019-03-27 13:35:03.804 We believe the server has signed timestamps bug
+. 2019-03-27 13:35:03.804 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-27 13:35:03.804 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-27 13:35:03.805 Getting current directory name.
+. 2019-03-27 13:35:03.805 Getting real path for '.'
+> 2019-03-27 13:35:03.805 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-27 13:35:03.806 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-27 13:35:03.806 Real path is '/'
+. 2019-03-27 13:35:03.806 Startup conversation with host finished.
+< 2019-03-27 13:35:03.806 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-27 13:35:03.807 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-27 13:35:03.807 Copying 1 files/directories to remote directory "/pub/693/in/"
+. 2019-03-27 13:35:03.807   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-27 13:35:03.807   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-27 13:35:03.807   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-27 13:35:03.807 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125894893.csv' [2019-03-27T13:33:02.769Z] [732]
+. 2019-03-27 13:35:03.807 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125894893.csv" to remote directory started.
+. 2019-03-27 13:35:03.808 Binary transfer mode selected.
+. 2019-03-27 13:35:03.808 Opening remote file.
+> 2019-03-27 13:35:03.808 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-27 13:35:03.810 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-27 13:35:03.810 Type: SSH_FXP_WRITE, Size: 757, Number: 774
+> 2019-03-27 13:35:03.810 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-27 13:35:03.812 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-27 13:35:03.812 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-27 13:35:03.812 Status code: 0
+. 2019-03-27 13:35:03.812 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125894893.csv' [732]
+> 2019-03-27 13:35:03.813 Script: exit
+. 2019-03-27 13:35:03.813 Script: Exit code: 0
+. 2019-03-27 13:35:03.813 Closing connection.
+. 2019-03-27 13:35:03.813 Sending special code: 12
+. 2019-03-27 13:35:03.813 Sent EOF message
+. 2019-03-28 06:36:30.567 --------------------------------------------------------------------------
+. 2019-03-28 06:36:30.568 WinSCP Version 5.9.3 (Build 7136) (OS 6.3.9600 - Windows Server 2012 R2 Standard)
+. 2019-03-28 06:36:30.568 Configuration: nul
+. 2019-03-28 06:36:30.568 Log level: Normal
+. 2019-03-28 06:36:30.568 Local account: RMGP\ugbene.ositadinma
+. 2019-03-28 06:36:30.568 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-03-28 06:36:30.568 Process ID: 12792
+. 2019-03-28 06:36:30.568 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-03-28 06:36:30.569 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-03-28 06:36:30.569 Login time: 2019-03-28T06:36:30+00:00 06:36:30
+. 2019-03-28 06:36:30.569 --------------------------------------------------------------------------
+. 2019-03-28 06:36:30.569 Script: Retrospectively logging previous script records:
+> 2019-03-28 06:36:30.569 Script: option echo off 
+< 2019-03-28 06:36:30.569 Script: echo            off       
+> 2019-03-28 06:36:30.569 Script: option batch on 
+< 2019-03-28 06:36:30.569 Script: batch           on        
+< 2019-03-28 06:36:30.569 Script: reconnecttime   120       
+> 2019-03-28 06:36:30.569 Script: option confirm off 
+< 2019-03-28 06:36:30.569 Script: confirm         off       
+> 2019-03-28 06:36:30.569 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-03-28 06:36:30.569 --------------------------------------------------------------------------
+. 2019-03-28 06:36:30.569 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-03-28 06:36:30.569 Host name: 10.106.87.5 (Port: 22)
+. 2019-03-28 06:36:30.569 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-28 06:36:30.569 Tunnel: No
+. 2019-03-28 06:36:30.569 Transfer Protocol: SFTP
+. 2019-03-28 06:36:30.569 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-28 06:36:30.569 Disable Nagle: No
+. 2019-03-28 06:36:30.569 Proxy: None
+. 2019-03-28 06:36:30.569 Send buffer: 262144
+. 2019-03-28 06:36:30.569 SSH protocol version: 2; Compression: No
+. 2019-03-28 06:36:30.569 Bypass authentication: No
+. 2019-03-28 06:36:30.569 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: No
+. 2019-03-28 06:36:30.569 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-28 06:36:30.569 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-28 06:36:30.569 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-28 06:36:30.569 Simple channel: Yes
+. 2019-03-28 06:36:30.569 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-28 06:36:30.569 Shell: default
+. 2019-03-28 06:36:30.569 EOL: LF, UTF: Auto
+. 2019-03-28 06:36:30.569 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-28 06:36:30.569 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-28 06:36:30.569 SFTP Bugs: Auto,Auto
+. 2019-03-28 06:36:30.569 SFTP Server: default
+. 2019-03-28 06:36:30.569 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-28 06:36:30.569 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-28 06:36:30.569 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-28 06:36:30.570 DST mode: Unix
+. 2019-03-28 06:36:30.570 --------------------------------------------------------------------------
+. 2019-03-28 06:36:30.570 Looking up host "10.106.87.5" for SSH connection
+. 2019-03-28 06:36:30.570 Connecting to 10.106.87.5 port 22
+. 2019-03-28 06:36:30.573 We claim version: SSH-2.0-WinSCP_release_5.9.3
+. 2019-03-28 06:36:30.583 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-03-28 06:36:30.583 We believe remote version has SSH-2 channel request bug
+. 2019-03-28 06:36:30.584 Using SSH protocol version 2
+. 2019-03-28 06:36:30.584 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-03-28 06:36:30.585 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-03-28 06:36:30.668 Server also has ssh-dss/ssh-rsa host keys, but we don't know any of them
+. 2019-03-28 06:36:30.668 Host key fingerprint is:
+. 2019-03-28 06:36:30.668 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-28 06:36:30.668 Verifying host key ecdsa-sha2-nistp256 nistp256,0x38a164efd29f82fc ae6f3620cc11caea 29549924346fc815 d84accc9f67d6608 ,0xff00f4416b534f58 dc6d2fa9997cc556 84f6c5ddaef474cb 1b14bdf8eb2a1d7a  with fingerprint ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4
+. 2019-03-28 06:36:30.668 Host key matches configured key
+. 2019-03-28 06:36:30.675 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-28 06:36:30.675 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-03-28 06:36:30.675 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-28 06:36:30.675 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-03-28 06:36:30.677 Using username "E000459".
+. 2019-03-28 06:36:30.694 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-28 06:36:30.695 Attempting keyboard-interactive authentication
+. 2019-03-28 06:36:30.696 Server refused keyboard-interactive authentication
+. 2019-03-28 06:36:30.696 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-03-28 06:36:30.696 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-28 06:36:30.696 Using stored password.
+. 2019-03-28 06:36:30.696 Sent password
+. 2019-03-28 06:36:30.702 Access granted
+. 2019-03-28 06:36:30.702 Opening session as main channel
+. 2019-03-28 06:36:30.714 Opened main channel
+. 2019-03-28 06:36:30.717 Started a shell/command
+. 2019-03-28 06:36:30.717 --------------------------------------------------------------------------
+. 2019-03-28 06:36:30.717 Using SFTP protocol.
+. 2019-03-28 06:36:30.718 Doing startup conversation with host.
+> 2019-03-28 06:36:30.718 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-28 06:36:30.719 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-03-28 06:36:30.719 SFTP version 3 negotiated.
+. 2019-03-28 06:36:30.719 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-28 06:36:30.719 Supports statvfs@openssh.com extension version "2"
+. 2019-03-28 06:36:30.719 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-28 06:36:30.719 Supports hardlink@openssh.com extension version "1"
+. 2019-03-28 06:36:30.719 We believe the server has signed timestamps bug
+. 2019-03-28 06:36:30.719 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-28 06:36:30.719 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-28 06:36:30.720 Getting current directory name.
+. 2019-03-28 06:36:30.720 Getting real path for '.'
+> 2019-03-28 06:36:30.720 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-28 06:36:30.721 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-03-28 06:36:30.721 Real path is '/'
+. 2019-03-28 06:36:30.721 Startup conversation with host finished.
+< 2019-03-28 06:36:30.721 Script: Active session: [1] E000459@10.106.87.5
+> 2019-03-28 06:36:30.721 Script: put -nopermissions -nopreservetime -delete "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-03-28 06:36:30.723 Copying 8 files/directories to remote directory "/pub/693/in/"
+. 2019-03-28 06:36:30.723   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-28 06:36:30.723   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-28 06:36:30.723   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-28 06:36:30.723 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895909.csv' [2019-03-28T06:29:22.697Z] [732]
+. 2019-03-28 06:36:30.733 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895909.csv" to remote directory started.
+. 2019-03-28 06:36:30.733 Binary transfer mode selected.
+. 2019-03-28 06:36:30.733 Opening remote file.
+> 2019-03-28 06:36:30.733 Type: SSH_FXP_OPEN, Size: 70, Number: 259
+< 2019-03-28 06:36:30.769 Type: SSH_FXP_HANDLE, Size: 13, Number: 259
+> 2019-03-28 06:36:30.769 Type: SSH_FXP_WRITE, Size: 757, Number: 774
+> 2019-03-28 06:36:30.769 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+< 2019-03-28 06:36:30.771 Type: SSH_FXP_STATUS, Size: 24, Number: 774
+< 2019-03-28 06:36:30.771 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+< 2019-03-28 06:36:30.771 Status code: 0
+. 2019-03-28 06:36:30.771 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895909.csv' [732]
+. 2019-03-28 06:36:30.772 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895911.csv' [2019-03-28T06:31:25.305Z] [732]
+. 2019-03-28 06:36:30.776 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895911.csv" to remote directory started.
+. 2019-03-28 06:36:30.776 Binary transfer mode selected.
+. 2019-03-28 06:36:30.776 Opening remote file.
+> 2019-03-28 06:36:30.777 Type: SSH_FXP_OPEN, Size: 70, Number: 1283
+< 2019-03-28 06:36:30.779 Type: SSH_FXP_HANDLE, Size: 13, Number: 1283
+> 2019-03-28 06:36:30.779 Type: SSH_FXP_WRITE, Size: 757, Number: 1798
+> 2019-03-28 06:36:30.779 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+< 2019-03-28 06:36:30.781 Type: SSH_FXP_STATUS, Size: 24, Number: 1798
+< 2019-03-28 06:36:30.810 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+< 2019-03-28 06:36:30.810 Status code: 0
+. 2019-03-28 06:36:30.810 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895911.csv' [732]
+. 2019-03-28 06:36:30.811 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895914.csv' [2019-03-28T06:34:28.709Z] [732]
+. 2019-03-28 06:36:30.814 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895914.csv" to remote directory started.
+. 2019-03-28 06:36:30.815 Binary transfer mode selected.
+. 2019-03-28 06:36:30.815 Opening remote file.
+> 2019-03-28 06:36:30.815 Type: SSH_FXP_OPEN, Size: 70, Number: 2307
+< 2019-03-28 06:36:30.817 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2019-03-28 06:36:30.817 Type: SSH_FXP_WRITE, Size: 757, Number: 2822
+> 2019-03-28 06:36:30.817 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+< 2019-03-28 06:36:30.818 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2019-03-28 06:36:30.819 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2019-03-28 06:36:30.819 Status code: 0
+. 2019-03-28 06:36:30.819 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_125895914.csv' [732]
+. 2019-03-28 06:36:30.820 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895908.csv' [2019-03-28T06:28:21.554Z] [732]
+. 2019-03-28 06:36:30.823 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895908.csv" to remote directory started.
+. 2019-03-28 06:36:30.823 Binary transfer mode selected.
+. 2019-03-28 06:36:30.823 Opening remote file.
+> 2019-03-28 06:36:30.823 Type: SSH_FXP_OPEN, Size: 70, Number: 3331
+< 2019-03-28 06:36:30.825 Type: SSH_FXP_HANDLE, Size: 13, Number: 3331
+> 2019-03-28 06:36:30.826 Type: SSH_FXP_WRITE, Size: 757, Number: 3846
+> 2019-03-28 06:36:30.826 Type: SSH_FXP_CLOSE, Size: 13, Number: 4100
+< 2019-03-28 06:36:30.827 Type: SSH_FXP_STATUS, Size: 24, Number: 3846
+< 2019-03-28 06:36:30.827 Type: SSH_FXP_STATUS, Size: 24, Number: 4100
+< 2019-03-28 06:36:30.827 Status code: 0
+. 2019-03-28 06:36:30.827 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895908.csv' [732]
+. 2019-03-28 06:36:30.828 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895913.csv' [2019-03-28T06:33:27.636Z] [732]
+. 2019-03-28 06:36:30.830 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895913.csv" to remote directory started.
+. 2019-03-28 06:36:30.830 Binary transfer mode selected.
+. 2019-03-28 06:36:30.830 Opening remote file.
+> 2019-03-28 06:36:30.830 Type: SSH_FXP_OPEN, Size: 70, Number: 4355
+< 2019-03-28 06:36:30.833 Type: SSH_FXP_HANDLE, Size: 13, Number: 4355
+> 2019-03-28 06:36:30.834 Type: SSH_FXP_WRITE, Size: 757, Number: 4870
+> 2019-03-28 06:36:30.834 Type: SSH_FXP_CLOSE, Size: 13, Number: 5124
+< 2019-03-28 06:36:30.835 Type: SSH_FXP_STATUS, Size: 24, Number: 4870
+< 2019-03-28 06:36:30.835 Type: SSH_FXP_STATUS, Size: 24, Number: 5124
+< 2019-03-28 06:36:30.835 Status code: 0
+. 2019-03-28 06:36:30.835 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895913.csv' [732]
+. 2019-03-28 06:36:30.836 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895916.csv' [2019-03-28T06:35:30.194Z] [732]
+. 2019-03-28 06:36:30.841 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895916.csv" to remote directory started.
+. 2019-03-28 06:36:30.841 Binary transfer mode selected.
+. 2019-03-28 06:36:30.841 Opening remote file.
+> 2019-03-28 06:36:30.841 Type: SSH_FXP_OPEN, Size: 70, Number: 5379
+< 2019-03-28 06:36:30.843 Type: SSH_FXP_HANDLE, Size: 13, Number: 5379
+> 2019-03-28 06:36:30.843 Type: SSH_FXP_WRITE, Size: 757, Number: 5894
+> 2019-03-28 06:36:30.843 Type: SSH_FXP_CLOSE, Size: 13, Number: 6148
+< 2019-03-28 06:36:30.850 Type: SSH_FXP_STATUS, Size: 24, Number: 5894
+< 2019-03-28 06:36:30.850 Type: SSH_FXP_STATUS, Size: 24, Number: 6148
+< 2019-03-28 06:36:30.850 Status code: 0
+. 2019-03-28 06:36:30.850 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_425895916.csv' [732]
+. 2019-03-28 06:36:30.851 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525895912.csv' [2019-03-28T06:32:26.516Z] [732]
+. 2019-03-28 06:36:30.856 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525895912.csv" to remote directory started.
+. 2019-03-28 06:36:30.856 Binary transfer mode selected.
+. 2019-03-28 06:36:30.856 Opening remote file.
+> 2019-03-28 06:36:30.856 Type: SSH_FXP_OPEN, Size: 70, Number: 6403
+< 2019-03-28 06:36:30.882 Type: SSH_FXP_HANDLE, Size: 13, Number: 6403
+> 2019-03-28 06:36:30.883 Type: SSH_FXP_WRITE, Size: 757, Number: 6918
+> 2019-03-28 06:36:30.883 Type: SSH_FXP_CLOSE, Size: 13, Number: 7172
+< 2019-03-28 06:36:30.884 Type: SSH_FXP_STATUS, Size: 24, Number: 6918
+< 2019-03-28 06:36:30.885 Type: SSH_FXP_STATUS, Size: 24, Number: 7172
+< 2019-03-28 06:36:30.885 Status code: 0
+. 2019-03-28 06:36:30.885 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_525895912.csv' [732]
+. 2019-03-28 06:36:30.886 File: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_625895910.csv' [2019-03-28T06:30:24.156Z] [732]
+. 2019-03-28 06:36:30.889 Copying "C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_625895910.csv" to remote directory started.
+. 2019-03-28 06:36:30.889 Binary transfer mode selected.
+. 2019-03-28 06:36:30.889 Opening remote file.
+> 2019-03-28 06:36:30.892 Type: SSH_FXP_OPEN, Size: 70, Number: 7427
+< 2019-03-28 06:36:30.905 Type: SSH_FXP_HANDLE, Size: 13, Number: 7427
+> 2019-03-28 06:36:30.905 Type: SSH_FXP_WRITE, Size: 757, Number: 7942
+> 2019-03-28 06:36:30.905 Type: SSH_FXP_CLOSE, Size: 13, Number: 8196
+< 2019-03-28 06:36:30.907 Type: SSH_FXP_STATUS, Size: 24, Number: 7942
+< 2019-03-28 06:36:30.907 Type: SSH_FXP_STATUS, Size: 24, Number: 8196
+< 2019-03-28 06:36:30.907 Status code: 0
+. 2019-03-28 06:36:30.907 Transfer done: 'C:\Users\ugbene.ositadinma\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_625895910.csv' [732]
+> 2019-03-28 06:36:30.908 Script: exit
+. 2019-03-28 06:36:30.908 Script: Exit code: 0
+. 2019-03-28 06:36:30.908 Closing connection.
+. 2019-03-28 06:36:30.908 Sending special code: 12
+. 2019-03-28 06:36:30.908 Sent EOF message
+. 2019-08-06 11:07:58.299 --------------------------------------------------------------------------
+. 2019-08-06 11:07:58.300 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-06 11:07:58.300 Configuration: nul
+. 2019-08-06 11:07:58.300 Log level: Normal
+. 2019-08-06 11:07:58.301 Local account: RMGP\Sachin.Kamat
+. 2019-08-06 11:07:58.301 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-06 11:07:58.301 Process ID: 18392
+. 2019-08-06 11:07:58.301 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-06 11:07:58.301 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-06 11:07:58.301 Login time: 06 August 2019 11:07:58
+. 2019-08-06 11:07:58.301 --------------------------------------------------------------------------
+. 2019-08-06 11:07:58.301 Script: Retrospectively logging previous script records:
+> 2019-08-06 11:07:58.301 Script: option echo off 
+< 2019-08-06 11:07:58.301 Script: echo            off       
+> 2019-08-06 11:07:58.301 Script: option batch on 
+< 2019-08-06 11:07:58.301 Script: batch           on        
+> 2019-08-06 11:07:58.301 Script: option confirm off 
+< 2019-08-06 11:07:58.301 Script: confirm         off       
+> 2019-08-06 11:07:58.301 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-06 11:07:58.301 --------------------------------------------------------------------------
+. 2019-08-06 11:07:58.301 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-06 11:07:58.301 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-06 11:07:58.301 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-06 11:07:58.301 Tunnel: No
+. 2019-08-06 11:07:58.301 Transfer Protocol: SFTP
+. 2019-08-06 11:07:58.301 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-06 11:07:58.301 Disable Nagle: No
+. 2019-08-06 11:07:58.301 Proxy: None
+. 2019-08-06 11:07:58.301 Send buffer: 262144
+. 2019-08-06 11:07:58.301 SSH protocol version: 2; Compression: No
+. 2019-08-06 11:07:58.301 Bypass authentication: No
+. 2019-08-06 11:07:58.301 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-06 11:07:58.301 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-06 11:07:58.301 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-06 11:07:58.302 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-06 11:07:58.302 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-06 11:07:58.302 Simple channel: Yes
+. 2019-08-06 11:07:58.302 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-06 11:07:58.302 Shell: default
+. 2019-08-06 11:07:58.302 EOL: LF, UTF: Auto
+. 2019-08-06 11:07:58.302 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-06 11:07:58.302 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-06 11:07:58.302 SFTP Bugs: Auto,Auto
+. 2019-08-06 11:07:58.302 SFTP Server: default
+. 2019-08-06 11:07:58.302 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-06 11:07:58.302 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-06 11:07:58.302 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-06 11:07:58.302 DST mode: Unix
+. 2019-08-06 11:07:58.302 --------------------------------------------------------------------------
+. 2019-08-06 11:07:58.302 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-06 11:07:58.302 Connecting to 10.106.87.5 port 22
+. 2019-08-06 11:07:58.324 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-06 11:07:58.357 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-06 11:07:58.357 We believe remote version has SSH-2 channel request bug
+. 2019-08-06 11:07:58.357 Using SSH protocol version 2
+. 2019-08-06 11:07:58.358 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-06 11:07:58.361 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-06 11:07:58.438 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-06 11:07:58.438 Host key fingerprint is:
+. 2019-08-06 11:07:58.438 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-06 11:07:58.439 Host key matches configured key
+. 2019-08-06 11:07:58.439 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-06 11:07:58.439 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-06 11:07:58.439 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-06 11:07:58.439 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-06 11:07:58.468 Using username "E000459".
+. 2019-08-06 11:07:58.504 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-06 11:07:58.504 Attempting keyboard-interactive authentication
+. 2019-08-06 11:07:58.519 Server refused keyboard-interactive authentication
+. 2019-08-06 11:07:58.519 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-06 11:07:58.519 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-06 11:07:58.519 Using stored password.
+. 2019-08-06 11:07:58.519 Sent password
+. 2019-08-06 11:07:58.545 Access granted
+. 2019-08-06 11:07:58.545 Opening session as main channel
+. 2019-08-06 11:07:58.570 Opened main channel
+. 2019-08-06 11:07:58.602 Started a shell/command
+. 2019-08-06 11:07:58.602 --------------------------------------------------------------------------
+. 2019-08-06 11:07:58.602 Using SFTP protocol.
+. 2019-08-06 11:07:58.602 Doing startup conversation with host.
+> 2019-08-06 11:07:58.602 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-06 11:07:58.617 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-06 11:07:58.617 SFTP version 3 negotiated.
+. 2019-08-06 11:07:58.617 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-06 11:07:58.617 Supports statvfs@openssh.com extension version "2"
+. 2019-08-06 11:07:58.617 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-06 11:07:58.617 Supports hardlink@openssh.com extension version "1"
+. 2019-08-06 11:07:58.617 We believe the server has signed timestamps bug
+. 2019-08-06 11:07:58.617 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-06 11:07:58.617 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-06 11:07:58.617 Getting current directory name.
+. 2019-08-06 11:07:58.617 Getting real path for '.'
+> 2019-08-06 11:07:58.617 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-06 11:07:58.633 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-06 11:07:58.633 Real path is '/'
+. 2019-08-06 11:07:58.633 Startup conversation with host finished.
+< 2019-08-06 11:07:58.633 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-06 11:07:58.633 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-06 11:07:58.634 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-06 11:07:58.634   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-06 11:07:58.634   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-06 11:07:58.634   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-06 11:07:58.634 Getting real path for '/pub/693/in/'
+> 2019-08-06 11:07:58.634 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-06 11:07:58.651 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-06 11:07:58.651 Real path is '/pub/693/in'
+. 2019-08-06 11:07:58.651 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_626084827.csv' [2019-08-06T10:06:53.942Z] [732]
+. 2019-08-06 11:07:58.653 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_626084827.csv" to remote directory started.
+. 2019-08-06 11:07:58.653 Binary transfer mode selected.
+. 2019-08-06 11:07:58.653 Opening remote file.
+> 2019-08-06 11:07:58.653 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-06 11:07:58.669 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-06 11:07:58.669 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-06 11:07:58.670 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-06 11:07:58.685 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-06 11:07:58.685 Status code: 0
+< 2019-08-06 11:07:58.699 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-06 11:07:58.699 Status code: 0
+. 2019-08-06 11:07:58.699 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_626084827.csv' => '/pub/693/in/COSS01G4_PreAdvice3_626084827.csv' [732]
+. 2019-08-06 11:07:58.701 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-06 11:07:58.701 Script: exit
+. 2019-08-06 11:07:58.701 Script: Exit code: 0
+. 2019-08-06 11:07:58.701 Closing connection.
+. 2019-08-06 11:07:58.701 Sending special code: 12
+. 2019-08-06 11:07:58.701 Sent EOF message
+. 2019-08-08 12:01:41.274 --------------------------------------------------------------------------
+. 2019-08-08 12:01:41.275 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-08 12:01:41.275 Configuration: nul
+. 2019-08-08 12:01:41.275 Log level: Normal
+. 2019-08-08 12:01:41.275 Local account: RMGP\Sachin.Kamat
+. 2019-08-08 12:01:41.275 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-08 12:01:41.275 Process ID: 3856
+. 2019-08-08 12:01:41.276 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-08 12:01:41.276 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-08 12:01:41.276 Login time: 08 August 2019 12:01:41
+. 2019-08-08 12:01:41.276 --------------------------------------------------------------------------
+. 2019-08-08 12:01:41.276 Script: Retrospectively logging previous script records:
+> 2019-08-08 12:01:41.276 Script: option echo off 
+< 2019-08-08 12:01:41.276 Script: echo            off       
+> 2019-08-08 12:01:41.276 Script: option batch on 
+< 2019-08-08 12:01:41.276 Script: batch           on        
+> 2019-08-08 12:01:41.276 Script: option confirm off 
+< 2019-08-08 12:01:41.276 Script: confirm         off       
+> 2019-08-08 12:01:41.276 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-08 12:01:41.276 --------------------------------------------------------------------------
+. 2019-08-08 12:01:41.276 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-08 12:01:41.276 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-08 12:01:41.276 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-08 12:01:41.276 Tunnel: No
+. 2019-08-08 12:01:41.276 Transfer Protocol: SFTP
+. 2019-08-08 12:01:41.276 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-08 12:01:41.276 Disable Nagle: No
+. 2019-08-08 12:01:41.276 Proxy: None
+. 2019-08-08 12:01:41.276 Send buffer: 262144
+. 2019-08-08 12:01:41.276 SSH protocol version: 2; Compression: No
+. 2019-08-08 12:01:41.276 Bypass authentication: No
+. 2019-08-08 12:01:41.276 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-08 12:01:41.276 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-08 12:01:41.276 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-08 12:01:41.276 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-08 12:01:41.276 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-08 12:01:41.276 Simple channel: Yes
+. 2019-08-08 12:01:41.276 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-08 12:01:41.276 Shell: default
+. 2019-08-08 12:01:41.276 EOL: LF, UTF: Auto
+. 2019-08-08 12:01:41.276 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-08 12:01:41.276 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-08 12:01:41.276 SFTP Bugs: Auto,Auto
+. 2019-08-08 12:01:41.276 SFTP Server: default
+. 2019-08-08 12:01:41.276 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-08 12:01:41.276 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-08 12:01:41.276 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-08 12:01:41.276 DST mode: Unix
+. 2019-08-08 12:01:41.276 --------------------------------------------------------------------------
+. 2019-08-08 12:01:41.277 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-08 12:01:41.277 Connecting to 10.106.87.5 port 22
+. 2019-08-08 12:01:41.296 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-08 12:01:41.323 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-08 12:01:41.323 We believe remote version has SSH-2 channel request bug
+. 2019-08-08 12:01:41.323 Using SSH protocol version 2
+. 2019-08-08 12:01:41.323 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-08 12:01:41.326 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-08 12:01:41.393 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-08 12:01:41.393 Host key fingerprint is:
+. 2019-08-08 12:01:41.393 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-08 12:01:41.393 Host key matches configured key
+. 2019-08-08 12:01:41.393 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-08 12:01:41.393 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-08 12:01:41.393 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-08 12:01:41.393 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-08 12:01:41.423 Using username "E000459".
+. 2019-08-08 12:01:41.450 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:01:41.450 Attempting keyboard-interactive authentication
+. 2019-08-08 12:01:41.465 Server refused keyboard-interactive authentication
+. 2019-08-08 12:01:41.465 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:01:41.465 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-08 12:01:41.465 Using stored password.
+. 2019-08-08 12:01:41.465 Sent password
+. 2019-08-08 12:01:41.486 Access granted
+. 2019-08-08 12:01:41.486 Opening session as main channel
+. 2019-08-08 12:01:41.502 Opened main channel
+. 2019-08-08 12:01:41.533 Started a shell/command
+. 2019-08-08 12:01:41.533 --------------------------------------------------------------------------
+. 2019-08-08 12:01:41.533 Using SFTP protocol.
+. 2019-08-08 12:01:41.533 Doing startup conversation with host.
+> 2019-08-08 12:01:41.533 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-08 12:01:41.550 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-08 12:01:41.550 SFTP version 3 negotiated.
+. 2019-08-08 12:01:41.550 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-08 12:01:41.550 Supports statvfs@openssh.com extension version "2"
+. 2019-08-08 12:01:41.550 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-08 12:01:41.550 Supports hardlink@openssh.com extension version "1"
+. 2019-08-08 12:01:41.550 We believe the server has signed timestamps bug
+. 2019-08-08 12:01:41.550 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-08 12:01:41.550 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-08 12:01:41.550 Getting current directory name.
+. 2019-08-08 12:01:41.550 Getting real path for '.'
+> 2019-08-08 12:01:41.550 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-08 12:01:41.565 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-08 12:01:41.565 Real path is '/'
+. 2019-08-08 12:01:41.565 Startup conversation with host finished.
+< 2019-08-08 12:01:41.565 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-08 12:01:41.566 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-08 12:01:41.566 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-08 12:01:41.566   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-08 12:01:41.566   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-08 12:01:41.566   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-08 12:01:41.567 Getting real path for '/pub/693/in/'
+> 2019-08-08 12:01:41.567 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-08 12:01:41.581 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-08 12:01:41.581 Real path is '/pub/693/in'
+. 2019-08-08 12:01:41.581 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_526087761.csv' [2019-08-08T11:00:37.143Z] [732]
+. 2019-08-08 12:01:41.587 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_526087761.csv" to remote directory started.
+. 2019-08-08 12:01:41.587 Binary transfer mode selected.
+. 2019-08-08 12:01:41.587 Opening remote file.
+> 2019-08-08 12:01:41.587 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-08 12:01:41.602 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-08 12:01:41.602 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-08 12:01:41.602 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-08 12:01:41.619 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-08 12:01:41.619 Status code: 0
+< 2019-08-08 12:01:41.632 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-08 12:01:41.632 Status code: 0
+. 2019-08-08 12:01:41.632 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_526087761.csv' => '/pub/693/in/COSS01G4_PreAdvice3_526087761.csv' [732]
+. 2019-08-08 12:01:41.633 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-08 12:01:41.633 Script: exit
+. 2019-08-08 12:01:41.633 Script: Exit code: 0
+. 2019-08-08 12:01:41.633 Closing connection.
+. 2019-08-08 12:01:41.633 Sending special code: 12
+. 2019-08-08 12:01:41.633 Sent EOF message
+. 2019-08-08 12:05:02.231 --------------------------------------------------------------------------
+. 2019-08-08 12:05:02.232 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-08 12:05:02.232 Configuration: nul
+. 2019-08-08 12:05:02.232 Log level: Normal
+. 2019-08-08 12:05:02.232 Local account: RMGP\Sachin.Kamat
+. 2019-08-08 12:05:02.232 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-08 12:05:02.232 Process ID: 16516
+. 2019-08-08 12:05:02.232 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-08 12:05:02.232 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-08 12:05:02.232 Login time: 08 August 2019 12:05:02
+. 2019-08-08 12:05:02.232 --------------------------------------------------------------------------
+. 2019-08-08 12:05:02.232 Script: Retrospectively logging previous script records:
+> 2019-08-08 12:05:02.232 Script: option echo off 
+< 2019-08-08 12:05:02.232 Script: echo            off       
+> 2019-08-08 12:05:02.232 Script: option batch on 
+< 2019-08-08 12:05:02.232 Script: batch           on        
+> 2019-08-08 12:05:02.232 Script: option confirm off 
+< 2019-08-08 12:05:02.232 Script: confirm         off       
+> 2019-08-08 12:05:02.232 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-08 12:05:02.232 --------------------------------------------------------------------------
+. 2019-08-08 12:05:02.232 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-08 12:05:02.233 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-08 12:05:02.233 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-08 12:05:02.233 Tunnel: No
+. 2019-08-08 12:05:02.233 Transfer Protocol: SFTP
+. 2019-08-08 12:05:02.233 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-08 12:05:02.233 Disable Nagle: No
+. 2019-08-08 12:05:02.233 Proxy: None
+. 2019-08-08 12:05:02.233 Send buffer: 262144
+. 2019-08-08 12:05:02.233 SSH protocol version: 2; Compression: No
+. 2019-08-08 12:05:02.233 Bypass authentication: No
+. 2019-08-08 12:05:02.233 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-08 12:05:02.233 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-08 12:05:02.233 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-08 12:05:02.233 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-08 12:05:02.233 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-08 12:05:02.233 Simple channel: Yes
+. 2019-08-08 12:05:02.233 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-08 12:05:02.233 Shell: default
+. 2019-08-08 12:05:02.233 EOL: LF, UTF: Auto
+. 2019-08-08 12:05:02.233 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-08 12:05:02.233 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-08 12:05:02.233 SFTP Bugs: Auto,Auto
+. 2019-08-08 12:05:02.233 SFTP Server: default
+. 2019-08-08 12:05:02.233 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-08 12:05:02.233 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-08 12:05:02.233 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-08 12:05:02.233 DST mode: Unix
+. 2019-08-08 12:05:02.233 --------------------------------------------------------------------------
+. 2019-08-08 12:05:02.233 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-08 12:05:02.233 Connecting to 10.106.87.5 port 22
+. 2019-08-08 12:05:02.251 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-08 12:05:02.284 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-08 12:05:02.284 We believe remote version has SSH-2 channel request bug
+. 2019-08-08 12:05:02.284 Using SSH protocol version 2
+. 2019-08-08 12:05:02.285 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-08 12:05:02.288 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-08 12:05:02.358 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-08 12:05:02.358 Host key fingerprint is:
+. 2019-08-08 12:05:02.358 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-08 12:05:02.358 Host key matches configured key
+. 2019-08-08 12:05:02.359 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-08 12:05:02.359 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-08 12:05:02.359 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-08 12:05:02.359 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-08 12:05:02.389 Using username "E000459".
+. 2019-08-08 12:05:02.427 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:05:02.427 Attempting keyboard-interactive authentication
+. 2019-08-08 12:05:02.442 Server refused keyboard-interactive authentication
+. 2019-08-08 12:05:02.442 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:05:02.442 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-08 12:05:02.442 Using stored password.
+. 2019-08-08 12:05:02.442 Sent password
+. 2019-08-08 12:05:02.465 Access granted
+. 2019-08-08 12:05:02.465 Opening session as main channel
+. 2019-08-08 12:05:02.491 Opened main channel
+. 2019-08-08 12:05:02.521 Started a shell/command
+. 2019-08-08 12:05:02.521 --------------------------------------------------------------------------
+. 2019-08-08 12:05:02.521 Using SFTP protocol.
+. 2019-08-08 12:05:02.521 Doing startup conversation with host.
+> 2019-08-08 12:05:02.522 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-08 12:05:02.537 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-08 12:05:02.537 SFTP version 3 negotiated.
+. 2019-08-08 12:05:02.537 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-08 12:05:02.537 Supports statvfs@openssh.com extension version "2"
+. 2019-08-08 12:05:02.537 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-08 12:05:02.537 Supports hardlink@openssh.com extension version "1"
+. 2019-08-08 12:05:02.537 We believe the server has signed timestamps bug
+. 2019-08-08 12:05:02.537 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-08 12:05:02.537 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-08 12:05:02.537 Getting current directory name.
+. 2019-08-08 12:05:02.537 Getting real path for '.'
+> 2019-08-08 12:05:02.537 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-08 12:05:02.551 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-08 12:05:02.551 Real path is '/'
+. 2019-08-08 12:05:02.551 Startup conversation with host finished.
+< 2019-08-08 12:05:02.551 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-08 12:05:02.551 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-08 12:05:02.552 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-08 12:05:02.552   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-08 12:05:02.552   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-08 12:05:02.552   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-08 12:05:02.552 Getting real path for '/pub/693/in/'
+> 2019-08-08 12:05:02.552 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-08 12:05:02.570 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-08 12:05:02.570 Real path is '/pub/693/in'
+. 2019-08-08 12:05:02.570 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087764.csv' [2019-08-08T11:03:58.423Z] [732]
+. 2019-08-08 12:05:02.574 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087764.csv" to remote directory started.
+. 2019-08-08 12:05:02.574 Binary transfer mode selected.
+. 2019-08-08 12:05:02.574 Opening remote file.
+> 2019-08-08 12:05:02.575 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-08 12:05:02.593 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-08 12:05:02.593 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-08 12:05:02.593 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-08 12:05:02.608 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-08 12:05:02.608 Status code: 0
+< 2019-08-08 12:05:02.623 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-08 12:05:02.623 Status code: 0
+. 2019-08-08 12:05:02.623 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087764.csv' => '/pub/693/in/COSS01G4_PreAdvice3_126087764.csv' [732]
+. 2019-08-08 12:05:02.624 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-08 12:05:02.624 Script: exit
+. 2019-08-08 12:05:02.624 Script: Exit code: 0
+. 2019-08-08 12:05:02.624 Closing connection.
+. 2019-08-08 12:05:02.624 Sending special code: 12
+. 2019-08-08 12:05:02.624 Sent EOF message
+. 2019-08-08 12:21:30.004 --------------------------------------------------------------------------
+. 2019-08-08 12:21:30.004 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-08 12:21:30.004 Configuration: nul
+. 2019-08-08 12:21:30.004 Log level: Normal
+. 2019-08-08 12:21:30.004 Local account: RMGP\Sachin.Kamat
+. 2019-08-08 12:21:30.004 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-08 12:21:30.004 Process ID: 15808
+. 2019-08-08 12:21:30.005 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-08 12:21:30.005 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-08 12:21:30.005 Login time: 08 August 2019 12:21:30
+. 2019-08-08 12:21:30.005 --------------------------------------------------------------------------
+. 2019-08-08 12:21:30.005 Script: Retrospectively logging previous script records:
+> 2019-08-08 12:21:30.005 Script: option echo off 
+< 2019-08-08 12:21:30.005 Script: echo            off       
+> 2019-08-08 12:21:30.005 Script: option batch on 
+< 2019-08-08 12:21:30.005 Script: batch           on        
+> 2019-08-08 12:21:30.005 Script: option confirm off 
+< 2019-08-08 12:21:30.005 Script: confirm         off       
+> 2019-08-08 12:21:30.005 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-08 12:21:30.005 --------------------------------------------------------------------------
+. 2019-08-08 12:21:30.005 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-08 12:21:30.005 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-08 12:21:30.005 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-08 12:21:30.005 Tunnel: No
+. 2019-08-08 12:21:30.005 Transfer Protocol: SFTP
+. 2019-08-08 12:21:30.005 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-08 12:21:30.005 Disable Nagle: No
+. 2019-08-08 12:21:30.005 Proxy: None
+. 2019-08-08 12:21:30.005 Send buffer: 262144
+. 2019-08-08 12:21:30.005 SSH protocol version: 2; Compression: No
+. 2019-08-08 12:21:30.005 Bypass authentication: No
+. 2019-08-08 12:21:30.005 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-08 12:21:30.005 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-08 12:21:30.005 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-08 12:21:30.005 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-08 12:21:30.005 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-08 12:21:30.005 Simple channel: Yes
+. 2019-08-08 12:21:30.005 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-08 12:21:30.005 Shell: default
+. 2019-08-08 12:21:30.006 EOL: LF, UTF: Auto
+. 2019-08-08 12:21:30.006 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-08 12:21:30.006 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-08 12:21:30.006 SFTP Bugs: Auto,Auto
+. 2019-08-08 12:21:30.006 SFTP Server: default
+. 2019-08-08 12:21:30.006 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-08 12:21:30.006 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-08 12:21:30.006 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-08 12:21:30.006 DST mode: Unix
+. 2019-08-08 12:21:30.006 --------------------------------------------------------------------------
+. 2019-08-08 12:21:30.006 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-08 12:21:30.006 Connecting to 10.106.87.5 port 22
+. 2019-08-08 12:21:30.025 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-08 12:21:30.053 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-08 12:21:30.053 We believe remote version has SSH-2 channel request bug
+. 2019-08-08 12:21:30.053 Using SSH protocol version 2
+. 2019-08-08 12:21:30.053 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-08 12:21:30.056 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-08 12:21:30.124 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-08 12:21:30.124 Host key fingerprint is:
+. 2019-08-08 12:21:30.124 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-08 12:21:30.124 Host key matches configured key
+. 2019-08-08 12:21:30.124 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-08 12:21:30.124 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-08 12:21:30.124 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-08 12:21:30.124 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-08 12:21:30.152 Using username "E000459".
+. 2019-08-08 12:21:30.180 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:21:30.180 Attempting keyboard-interactive authentication
+. 2019-08-08 12:21:30.194 Server refused keyboard-interactive authentication
+. 2019-08-08 12:21:30.194 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 12:21:30.194 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-08 12:21:30.194 Using stored password.
+. 2019-08-08 12:21:30.194 Sent password
+. 2019-08-08 12:21:30.215 Access granted
+. 2019-08-08 12:21:30.215 Opening session as main channel
+. 2019-08-08 12:21:30.232 Opened main channel
+. 2019-08-08 12:21:30.262 Started a shell/command
+. 2019-08-08 12:21:30.262 --------------------------------------------------------------------------
+. 2019-08-08 12:21:30.262 Using SFTP protocol.
+. 2019-08-08 12:21:30.262 Doing startup conversation with host.
+> 2019-08-08 12:21:30.262 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-08 12:21:30.277 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-08 12:21:30.277 SFTP version 3 negotiated.
+. 2019-08-08 12:21:30.277 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-08 12:21:30.277 Supports statvfs@openssh.com extension version "2"
+. 2019-08-08 12:21:30.277 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-08 12:21:30.278 Supports hardlink@openssh.com extension version "1"
+. 2019-08-08 12:21:30.278 We believe the server has signed timestamps bug
+. 2019-08-08 12:21:30.278 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-08 12:21:30.278 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-08 12:21:30.278 Getting current directory name.
+. 2019-08-08 12:21:30.278 Getting real path for '.'
+> 2019-08-08 12:21:30.278 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-08 12:21:30.294 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-08 12:21:30.294 Real path is '/'
+. 2019-08-08 12:21:30.294 Startup conversation with host finished.
+< 2019-08-08 12:21:30.294 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-08 12:21:30.294 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-08 12:21:30.295 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-08 12:21:30.295   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-08 12:21:30.295   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-08 12:21:30.295   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-08 12:21:30.295 Getting real path for '/pub/693/in/'
+> 2019-08-08 12:21:30.295 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-08 12:21:30.310 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-08 12:21:30.310 Real path is '/pub/693/in'
+. 2019-08-08 12:21:30.310 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_726087780.csv' [2019-08-08T11:20:26.112Z] [732]
+. 2019-08-08 12:21:30.315 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_726087780.csv" to remote directory started.
+. 2019-08-08 12:21:30.315 Binary transfer mode selected.
+. 2019-08-08 12:21:30.315 Opening remote file.
+> 2019-08-08 12:21:30.315 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-08 12:21:30.331 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-08 12:21:30.331 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-08 12:21:30.331 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-08 12:21:30.346 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-08 12:21:30.346 Status code: 0
+< 2019-08-08 12:21:30.359 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-08 12:21:30.360 Status code: 0
+. 2019-08-08 12:21:30.360 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_726087780.csv' => '/pub/693/in/COSS01G4_PreAdvice3_726087780.csv' [732]
+. 2019-08-08 12:21:30.360 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-08 12:21:30.360 Script: exit
+. 2019-08-08 12:21:30.361 Script: Exit code: 0
+. 2019-08-08 12:21:30.361 Closing connection.
+. 2019-08-08 12:21:30.361 Sending special code: 12
+. 2019-08-08 12:21:30.361 Sent EOF message
+. 2019-08-08 13:49:50.168 --------------------------------------------------------------------------
+. 2019-08-08 13:49:50.168 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-08 13:49:50.168 Configuration: nul
+. 2019-08-08 13:49:50.169 Log level: Normal
+. 2019-08-08 13:49:50.169 Local account: RMGP\Sachin.Kamat
+. 2019-08-08 13:49:50.169 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-08 13:49:50.169 Process ID: 15828
+. 2019-08-08 13:49:50.169 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-08 13:49:50.169 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-08 13:49:50.169 Login time: 08 August 2019 13:49:50
+. 2019-08-08 13:49:50.169 --------------------------------------------------------------------------
+. 2019-08-08 13:49:50.169 Script: Retrospectively logging previous script records:
+> 2019-08-08 13:49:50.169 Script: option echo off 
+< 2019-08-08 13:49:50.169 Script: echo            off       
+> 2019-08-08 13:49:50.169 Script: option batch on 
+< 2019-08-08 13:49:50.169 Script: batch           on        
+> 2019-08-08 13:49:50.169 Script: option confirm off 
+< 2019-08-08 13:49:50.169 Script: confirm         off       
+> 2019-08-08 13:49:50.169 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-08 13:49:50.169 --------------------------------------------------------------------------
+. 2019-08-08 13:49:50.169 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-08 13:49:50.169 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-08 13:49:50.169 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-08 13:49:50.169 Tunnel: No
+. 2019-08-08 13:49:50.169 Transfer Protocol: SFTP
+. 2019-08-08 13:49:50.169 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-08 13:49:50.169 Disable Nagle: No
+. 2019-08-08 13:49:50.169 Proxy: None
+. 2019-08-08 13:49:50.169 Send buffer: 262144
+. 2019-08-08 13:49:50.169 SSH protocol version: 2; Compression: No
+. 2019-08-08 13:49:50.170 Bypass authentication: No
+. 2019-08-08 13:49:50.170 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-08 13:49:50.170 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-08 13:49:50.170 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-08 13:49:50.170 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-08 13:49:50.170 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-08 13:49:50.170 Simple channel: Yes
+. 2019-08-08 13:49:50.170 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-08 13:49:50.170 Shell: default
+. 2019-08-08 13:49:50.170 EOL: LF, UTF: Auto
+. 2019-08-08 13:49:50.170 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-08 13:49:50.170 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-08 13:49:50.170 SFTP Bugs: Auto,Auto
+. 2019-08-08 13:49:50.170 SFTP Server: default
+. 2019-08-08 13:49:50.170 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-08 13:49:50.170 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-08 13:49:50.170 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-08 13:49:50.170 DST mode: Unix
+. 2019-08-08 13:49:50.170 --------------------------------------------------------------------------
+. 2019-08-08 13:49:50.170 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-08 13:49:50.170 Connecting to 10.106.87.5 port 22
+. 2019-08-08 13:49:50.188 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-08 13:49:50.212 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-08 13:49:50.212 We believe remote version has SSH-2 channel request bug
+. 2019-08-08 13:49:50.212 Using SSH protocol version 2
+. 2019-08-08 13:49:50.212 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-08 13:49:50.214 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-08 13:49:50.279 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-08 13:49:50.279 Host key fingerprint is:
+. 2019-08-08 13:49:50.279 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-08 13:49:50.279 Host key matches configured key
+. 2019-08-08 13:49:50.280 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-08 13:49:50.280 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-08 13:49:50.280 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-08 13:49:50.280 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-08 13:49:50.307 Using username "E000459".
+. 2019-08-08 13:49:50.332 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 13:49:50.332 Attempting keyboard-interactive authentication
+. 2019-08-08 13:49:50.347 Server refused keyboard-interactive authentication
+. 2019-08-08 13:49:50.347 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 13:49:50.347 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-08 13:49:50.347 Using stored password.
+. 2019-08-08 13:49:50.347 Sent password
+. 2019-08-08 13:49:50.369 Access granted
+. 2019-08-08 13:49:50.369 Opening session as main channel
+. 2019-08-08 13:49:50.384 Opened main channel
+. 2019-08-08 13:49:50.413 Started a shell/command
+. 2019-08-08 13:49:50.413 --------------------------------------------------------------------------
+. 2019-08-08 13:49:50.413 Using SFTP protocol.
+. 2019-08-08 13:49:50.413 Doing startup conversation with host.
+> 2019-08-08 13:49:50.413 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-08 13:49:50.428 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-08 13:49:50.428 SFTP version 3 negotiated.
+. 2019-08-08 13:49:50.428 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-08 13:49:50.428 Supports statvfs@openssh.com extension version "2"
+. 2019-08-08 13:49:50.428 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-08 13:49:50.428 Supports hardlink@openssh.com extension version "1"
+. 2019-08-08 13:49:50.428 We believe the server has signed timestamps bug
+. 2019-08-08 13:49:50.428 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-08 13:49:50.428 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-08 13:49:50.428 Getting current directory name.
+. 2019-08-08 13:49:50.428 Getting real path for '.'
+> 2019-08-08 13:49:50.428 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-08 13:49:50.443 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-08 13:49:50.443 Real path is '/'
+. 2019-08-08 13:49:50.443 Startup conversation with host finished.
+< 2019-08-08 13:49:50.443 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-08 13:49:50.444 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-08 13:49:50.444 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-08 13:49:50.444   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-08 13:49:50.444   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-08 13:49:50.444   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-08 13:49:50.444 Getting real path for '/pub/693/in/'
+> 2019-08-08 13:49:50.444 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-08 13:49:50.460 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-08 13:49:50.460 Real path is '/pub/693/in'
+. 2019-08-08 13:49:50.460 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087869.csv' [2019-08-08T12:48:46.611Z] [732]
+. 2019-08-08 13:49:50.462 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087869.csv" to remote directory started.
+. 2019-08-08 13:49:50.462 Binary transfer mode selected.
+. 2019-08-08 13:49:50.462 Opening remote file.
+> 2019-08-08 13:49:50.462 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-08 13:49:50.480 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-08 13:49:50.480 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-08 13:49:50.480 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-08 13:49:50.495 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-08 13:49:50.495 Status code: 0
+< 2019-08-08 13:49:50.509 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-08 13:49:50.509 Status code: 0
+. 2019-08-08 13:49:50.509 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_126087869.csv' => '/pub/693/in/COSS01G4_PreAdvice3_126087869.csv' [732]
+. 2019-08-08 13:49:50.509 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-08 13:49:50.510 Script: exit
+. 2019-08-08 13:49:50.510 Script: Exit code: 0
+. 2019-08-08 13:49:50.510 Closing connection.
+. 2019-08-08 13:49:50.510 Sending special code: 12
+. 2019-08-08 13:49:50.510 Sent EOF message
+. 2019-08-08 14:00:05.435 --------------------------------------------------------------------------
+. 2019-08-08 14:00:05.435 WinSCP Version 5.15.3 (Build 9730) (OS 10.0.16299 - Windows 10 Enterprise)
+. 2019-08-08 14:00:05.435 Configuration: nul
+. 2019-08-08 14:00:05.435 Log level: Normal
+. 2019-08-08 14:00:05.435 Local account: RMGP\Sachin.Kamat
+. 2019-08-08 14:00:05.435 Working directory: C:\Program Files (x86)\WinSCP
+. 2019-08-08 14:00:05.435 Process ID: 2620
+. 2019-08-08 14:00:05.435 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe"  /log="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\Logs\WinSCP.log" /ini=nul /script="C:\Users\sachin.kamat\.jenkins\workspace\MPEr\BatchScript\winSCP_uploadScriptSDG.txt"
+. 2019-08-08 14:00:05.436 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 31/03/2019, DST End: 27/10/2019
+. 2019-08-08 14:00:05.436 Login time: 08 August 2019 14:00:05
+. 2019-08-08 14:00:05.436 --------------------------------------------------------------------------
+. 2019-08-08 14:00:05.436 Script: Retrospectively logging previous script records:
+> 2019-08-08 14:00:05.436 Script: option echo off 
+< 2019-08-08 14:00:05.436 Script: echo            off       
+> 2019-08-08 14:00:05.436 Script: option batch on 
+< 2019-08-08 14:00:05.436 Script: batch           on        
+> 2019-08-08 14:00:05.436 Script: option confirm off 
+< 2019-08-08 14:00:05.436 Script: confirm         off       
+> 2019-08-08 14:00:05.436 Script: open sftp://E000459:***@10.106.87.5/ -hostkey="ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4"
+. 2019-08-08 14:00:05.436 --------------------------------------------------------------------------
+. 2019-08-08 14:00:05.436 Session name: E000459@10.106.87.5 (Ad-Hoc site)
+. 2019-08-08 14:00:05.436 Host name: 10.106.87.5 (Port: 22)
+. 2019-08-08 14:00:05.436 User name: E000459 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-08-08 14:00:05.436 Tunnel: No
+. 2019-08-08 14:00:05.436 Transfer Protocol: SFTP
+. 2019-08-08 14:00:05.436 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-08-08 14:00:05.436 Disable Nagle: No
+. 2019-08-08 14:00:05.436 Proxy: None
+. 2019-08-08 14:00:05.436 Send buffer: 262144
+. 2019-08-08 14:00:05.436 SSH protocol version: 2; Compression: No
+. 2019-08-08 14:00:05.436 Bypass authentication: No
+. 2019-08-08 14:00:05.436 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-08-08 14:00:05.436 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-08-08 14:00:05.436 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-08-08 14:00:05.436 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-08-08 14:00:05.436 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-08-08 14:00:05.436 Simple channel: Yes
+. 2019-08-08 14:00:05.436 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-08-08 14:00:05.436 Shell: default
+. 2019-08-08 14:00:05.436 EOL: LF, UTF: Auto
+. 2019-08-08 14:00:05.436 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-08-08 14:00:05.436 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-08-08 14:00:05.436 SFTP Bugs: Auto,Auto
+. 2019-08-08 14:00:05.436 SFTP Server: default
+. 2019-08-08 14:00:05.436 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-08-08 14:00:05.436 Cache directory changes: Yes, Permanent: Yes
+. 2019-08-08 14:00:05.436 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-08-08 14:00:05.436 DST mode: Unix
+. 2019-08-08 14:00:05.436 --------------------------------------------------------------------------
+. 2019-08-08 14:00:05.437 Looking up host "10.106.87.5" for SSH connection
+. 2019-08-08 14:00:05.437 Connecting to 10.106.87.5 port 22
+. 2019-08-08 14:00:05.455 We claim version: SSH-2.0-WinSCP_release_5.15.3
+. 2019-08-08 14:00:05.488 Server version: SSH-2.0-OpenSSH_6.0
+. 2019-08-08 14:00:05.488 We believe remote version has SSH-2 channel request bug
+. 2019-08-08 14:00:05.488 Using SSH protocol version 2
+. 2019-08-08 14:00:05.488 Have a known host key of type ecdsa-sha2-nistp256
+. 2019-08-08 14:00:05.492 Doing ECDH key exchange with curve nistp256 and hash SHA-256
+. 2019-08-08 14:00:05.564 Server also has ssh-rsa/ssh-dss host keys, but we don't know any of them
+. 2019-08-08 14:00:05.565 Host key fingerprint is:
+. 2019-08-08 14:00:05.565 ecdsa-sha2-nistp256 256 3b:29:9d:eb:b7:64:e9:69:25:24:bd:8f:e7:be:11:d4 QPxlm4+AUZFaIl9p+2E6kfh+XAbg8Y3qTSZ7Y6C17ys=
+. 2019-08-08 14:00:05.565 Host key matches configured key
+. 2019-08-08 14:00:05.565 Initialised AES-256 SDCTR client->server encryption
+. 2019-08-08 14:00:05.565 Initialised HMAC-SHA1 client->server MAC algorithm
+. 2019-08-08 14:00:05.565 Initialised AES-256 SDCTR server->client encryption
+. 2019-08-08 14:00:05.565 Initialised HMAC-SHA1 server->client MAC algorithm
+! 2019-08-08 14:00:05.595 Using username "E000459".
+. 2019-08-08 14:00:05.630 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 14:00:05.630 Attempting keyboard-interactive authentication
+. 2019-08-08 14:00:05.646 Server refused keyboard-interactive authentication
+. 2019-08-08 14:00:05.646 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2019-08-08 14:00:05.646 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-08-08 14:00:05.647 Using stored password.
+. 2019-08-08 14:00:05.647 Sent password
+. 2019-08-08 14:00:05.670 Access granted
+. 2019-08-08 14:00:05.670 Opening session as main channel
+. 2019-08-08 14:00:05.694 Opened main channel
+. 2019-08-08 14:00:05.724 Started a shell/command
+. 2019-08-08 14:00:05.724 --------------------------------------------------------------------------
+. 2019-08-08 14:00:05.724 Using SFTP protocol.
+. 2019-08-08 14:00:05.724 Doing startup conversation with host.
+> 2019-08-08 14:00:05.724 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-08-08 14:00:05.740 Type: SSH_FXP_VERSION, Size: 124, Number: -1
+. 2019-08-08 14:00:05.740 SFTP version 3 negotiated.
+. 2019-08-08 14:00:05.740 Unknown server extension posix-rename@openssh.com="1"
+. 2019-08-08 14:00:05.740 Supports statvfs@openssh.com extension version "2"
+. 2019-08-08 14:00:05.740 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-08-08 14:00:05.740 Supports hardlink@openssh.com extension version "1"
+. 2019-08-08 14:00:05.740 We believe the server has signed timestamps bug
+. 2019-08-08 14:00:05.740 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-08-08 14:00:05.740 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-08-08 14:00:05.740 Getting current directory name.
+. 2019-08-08 14:00:05.740 Getting real path for '.'
+> 2019-08-08 14:00:05.740 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-08-08 14:00:05.756 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-08-08 14:00:05.756 Real path is '/'
+. 2019-08-08 14:00:05.756 Startup conversation with host finished.
+< 2019-08-08 14:00:05.756 Script: Active session: [1] E000459@10.106.87.5
+> 2019-08-08 14:00:05.756 Script: put -nopermissions -nopreservetime -delete "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_*.csv" /pub/693/in/
+. 2019-08-08 14:00:05.756 Copying 1 files/directories to remote directory "/pub/693/in/" - total size: 732
+. 2019-08-08 14:00:05.756   PrTime: No; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-08-08 14:00:05.756   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-08-08 14:00:05.756   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-08-08 14:00:05.756 Getting real path for '/pub/693/in/'
+> 2019-08-08 14:00:05.756 Type: SSH_FXP_REALPATH, Size: 21, Number: 272
+< 2019-08-08 14:00:05.772 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2019-08-08 14:00:05.772 Real path is '/pub/693/in'
+. 2019-08-08 14:00:05.772 File: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_826087879.csv' [2019-08-08T12:59:01.707Z] [732]
+. 2019-08-08 14:00:05.777 Copying "C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_826087879.csv" to remote directory started.
+. 2019-08-08 14:00:05.777 Binary transfer mode selected.
+. 2019-08-08 14:00:05.777 Opening remote file.
+> 2019-08-08 14:00:05.777 Type: SSH_FXP_OPEN, Size: 70, Number: 515
+< 2019-08-08 14:00:05.793 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-08-08 14:00:05.793 Type: SSH_FXP_WRITE, Size: 757, Number: 1030
+> 2019-08-08 14:00:05.793 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+< 2019-08-08 14:00:05.808 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-08-08 14:00:05.808 Status code: 0
+< 2019-08-08 14:00:05.823 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-08-08 14:00:05.823 Status code: 0
+. 2019-08-08 14:00:05.823 Transfer done: 'C:\Users\sachin.kamat\.jenkins\workspace\MPEr\Pre-Advice\SDG\PUT\COSS01G4_PreAdvice3_826087879.csv' => '/pub/693/in/COSS01G4_PreAdvice3_826087879.csv' [732]
+. 2019-08-08 14:00:05.823 Copying finished: Transferred: 732, Elapsed: 0:00:00, CPS: 0/s
+> 2019-08-08 14:00:05.823 Script: exit
+. 2019-08-08 14:00:05.823 Script: Exit code: 0
+. 2019-08-08 14:00:05.823 Closing connection.
+. 2019-08-08 14:00:05.823 Sending special code: 12
+. 2019-08-08 14:00:05.823 Sent EOF message
